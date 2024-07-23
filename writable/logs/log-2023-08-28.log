@@ -1,0 +1,122 @@
+CRITICAL - 2023-08-28 00:20:17 --> Undefined array key "civil_registered"
+in APPPATH/Views/report.php on line 35.
+ 1 APPPATH/Views/report.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "civil_registered"', 'APPPATH/Views/report.php', 35)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/report.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report', [], true)
+ 5 APPPATH/Controllers/Report.php(33): view('report', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:27:06 --> Undefined array key 0
+in APPPATH/Models/Model_report.php on line 17.
+ 1 APPPATH/Models/Model_report.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Model_report.php', 17)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:29:04 --> Array to string conversion
+in APPPATH/Models/Model_report.php on line 16.
+ 1 APPPATH/Models/Model_report.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Models/Model_report.php', 16)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:29:46 --> Undefined array key 0
+in APPPATH/Models/Model_report.php on line 17.
+ 1 APPPATH/Models/Model_report.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Model_report.php', 17)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:30:42 --> Undefined array key "civil_unregistered"
+in APPPATH/Models/Model_report.php on line 21.
+ 1 APPPATH/Models/Model_report.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "civil_unregistered"', 'APPPATH/Models/Model_report.php', 21)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:32:13 --> Undefined array key 0
+in APPPATH/Models/Model_report.php on line 161.
+ 1 APPPATH/Models/Model_report.php(161): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Model_report.php', 161)
+ 2 APPPATH/Models/Model_report.php(21): App\Models\Model_report->get_pendency_data('criminal_unregistered')
+ 3 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:32:46 --> Undefined array key 0
+in APPPATH/Models/Model_report.php on line 162.
+ 1 APPPATH/Models/Model_report.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Model_report.php', 162)
+ 2 APPPATH/Models/Model_report.php(21): App\Models\Model_report->get_pendency_data('criminal_unregistered')
+ 3 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 00:35:03 --> Cannot use [] for reading
+in APPPATH/Models/Model_report.php on line 162.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-08-28 01:18:52 --> Cannot access offset of type string on string
+in APPPATH/Views/report.php on line 35.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report', [], true)
+ 4 APPPATH/Controllers/Report.php(33): view('report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 01:26:41 --> Undefined variable $pend
+in APPPATH/Views/report.php on line 79.
+ 1 APPPATH/Views/report.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pend', 'APPPATH/Views/report.php', 79)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/report.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report', [], true)
+ 5 APPPATH/Controllers/Report.php(33): view('report', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 03:43:52 --> Undefined array key "njdg_both"
+in APPPATH/Models/Model_report.php on line 58.
+ 1 APPPATH/Models/Model_report.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "njdg_both"', 'APPPATH/Models/Model_report.php', 58)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 03:49:13 --> Undefined array key "njdg_both"
+in APPPATH/Models/Model_report.php on line 58.
+ 1 APPPATH/Models/Model_report.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "njdg_both"', 'APPPATH/Models/Model_report.php', 58)
+ 2 APPPATH/Controllers/Report.php(22): App\Models\Model_report->get_pendency()
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 05:40:12 --> Undefined constant "php"
+in APPPATH/Views/report.php on line 60.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report', [], true)
+ 4 APPPATH/Controllers/Report.php(33): view('report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-28 07:43:07 --> Undefined variable $pendency
+in APPPATH/Views/report_icmic_njdg.php on line 41.
+ 1 APPPATH/Views/report_icmic_njdg.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pendency', 'APPPATH/Views/report_icmic_njdg.php', 41)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/report_icmic_njdg.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report_icmic_njdg', [], true)
+ 5 APPPATH/Controllers/Report.php(39): view('report_icmic_njdg')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->demo()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

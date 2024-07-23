@@ -1,0 +1,201 @@
+ERROR - 2023-09-04 10:51:32 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('10.25.78.67', 'anshu', Object(SensitiveParameterValue), 'sci_cmis_final_...', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#4 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#5 /var/www/html/app/Controllers/Report.php(26): App\Models\Model_icmis_njdg->get_pendency()
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->index()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#4 /var/www/html/app/Controllers/Report.php(26): App\Models\Model_icmis_njdg->get_pendency()
+#5 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->index()
+#6 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 10:51:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sci_cmis_final_29052023_2130'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1) as total_count,c.nature from main m left join casetype c on m.casetype_id=c.casecode where c_status=\'P\' and active_fil_no is not null and active_fil_no!=\'\' group by c.nature order by c.nature')
+ 3 APPPATH/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_criminal_registered')
+ 4 APPPATH/Controllers/Report.php(26): App\Models\Model_icmis_njdg->get_pendency()
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-04 10:52:51 --> Undefined variable $disposal
+in APPPATH/Views/report_icmic_njdg.php on line 518.
+ 1 APPPATH/Views/report_icmic_njdg.php(518): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $disposal', 'APPPATH/Views/report_icmic_njdg.php', 518)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/report_icmic_njdg.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('report_icmic_njdg', [], true)
+ 5 APPPATH/Controllers/Report.php(37): view('report_icmic_njdg')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-04 10:58:30 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('10.25.78.67', 'anshu', Object(SensitiveParameterValue), 'sci_cmis_final_...', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#4 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#5 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#4 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#5 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#6 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 10:58:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sci_cmis_final_29052023_2130'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1) as total_count,c.nature from main m left join casetype c on m.casetype_id=c.casecode where c_status=\'P\' and active_fil_no is not null and active_fil_no!=\'\' group by c.nature order by c.nature')
+ 3 APPPATH/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_criminal_registered')
+ 4 APPPATH/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->view()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-04 10:59:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('10.25.78.67', 'anshu', Object(SensitiveParameterValue), 'sci_cmis_final_...', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#4 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#5 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#4 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#5 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#6 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 10:59:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sci_cmis_final_29052023_2130'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1) as total_count,c.nature from main m left join casetype c on m.casetype_id=c.casecode where c_status=\'P\' and active_fil_no is not null and active_fil_no!=\'\' group by c.nature order by c.nature')
+ 3 APPPATH/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_criminal_registered')
+ 4 APPPATH/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->view()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-04 12:40:45 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('10.25.78.67', 'anshu', Object(SensitiveParameterValue), 'sci_cmis_final_...', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#4 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#5 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/app/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1)...')
+#3 /var/www/html/app/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_cri...')
+#4 /var/www/html/app/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+#5 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Report->view()
+#6 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+#7 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 12:40:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sci_cmis_final_29052023_2130'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/Model_icmis_njdg.php(292): CodeIgniter\Database\BaseConnection->query('select count(1) as total_count,c.nature from main m left join casetype c on m.casetype_id=c.casecode where c_status=\'P\' and active_fil_no is not null and active_fil_no!=\'\' group by c.nature order by c.nature')
+ 3 APPPATH/Models/Model_icmis_njdg.php(16): App\Models\Model_icmis_njdg->get_pendency_data('icmis_civil_criminal_registered')
+ 4 APPPATH/Controllers/Report.php(44): App\Models\Model_icmis_njdg->get_pendency()
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Report->view()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Report))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-04 06:15:44 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:170
+Stack trace:
+#0 /var/www/html/system/Database/MySQLi/Connection.php(170): mysqli->real_connect('10.25.78.67', 'anshu', Object(SensitiveParameterValue), 'sci_cmis_final_...', 3306, '', 0)
+#1 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/html/app/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+#5 /var/www/html/app/Controllers/Login.php(89): App\Models\LoginModel->checkLogin('1', '2021')
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'sci_cmis_final_29052023_2130' in /var/www/html/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /var/www/html/app/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+#4 /var/www/html/app/Controllers/Login.php(89): App\Models\LoginModel->checkLogin('1', '2021')
+#5 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+#6 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#7 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-09-04 06:15:44 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'sci_cmis_final_29052023_2130'
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `empid` = :empid:
+AND `userpass` = :userpass:
+AND `display` = :display:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+ 4 APPPATH/Controllers/Login.php(89): App\Models\LoginModel->checkLogin('1', '2021')
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

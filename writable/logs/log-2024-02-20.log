@@ -1,0 +1,398 @@
+CRITICAL - 2024-02-20 10:19:33 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:21:15 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:31:25 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:32:13 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:32:47 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:33:32 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:33:47 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:35:08 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Registration.php on line 124.
+ 1 APPPATH/Controllers/Filing/Registration.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Registration.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:43:55 --> Undefined variable $lower_court_details
+in APPPATH/Controllers/Caveat/Earlier_court.php on line 37.
+ 1 APPPATH/Controllers/Caveat/Earlier_court.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $lower_court_details', 'APPPATH/Controllers/Caveat/Earlier_court.php', 37)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Earlier_court->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Earlier_court))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:45:21 --> Undefined array key "short_description"
+in APPPATH/Views/Caveat/get_report_similarity_content.php on line 91.
+ 1 APPPATH/Views/Caveat/get_report_similarity_content.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "short_description"', 'APPPATH/Views/Caveat/get_report_similarity_content.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Caveat/get_report_similarity_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Caveat/get_report_similarity_content', [], true)
+ 5 APPPATH/Controllers/Caveat/Similarity.php(140): view('Caveat/get_report_similarity_content', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Similarity->get_report()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Similarity))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:48:19 --> Undefined array key "short_description"
+in APPPATH/Views/Caveat/get_report_similarity_content.php on line 91.
+ 1 APPPATH/Views/Caveat/get_report_similarity_content.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "short_description"', 'APPPATH/Views/Caveat/get_report_similarity_content.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Caveat/get_report_similarity_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Caveat/get_report_similarity_content', [], true)
+ 5 APPPATH/Controllers/Caveat/Similarity.php(140): view('Caveat/get_report_similarity_content', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Similarity->get_report()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Similarity))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:51:52 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 10:59:27 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 11:02:54 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-20 11:17:47 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022762-022763, 01-022762-022763, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:47+05:30, 2024-02-20 11:17:47+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:47.100442+05:30, null, null, null). in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'UPDATE "public"...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "public"...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "public"...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "public"...', Array, false)
+#5 /var/www/html/app/Models/Filing/RegistrationModel.php(594): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 /var/www/html/app/Controllers/Filing/Registration.php(322): App\Models\Filing\RegistrationModel->update_main(Array, '415202023')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-20 11:17:47 --> pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022762-022763, 01-022762-022763, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:47+05:30, 2024-02-20 11:17:47+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:47.100442+05:30, null, null, null).
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022762-022763, 01-022762-022763, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:47+05:30, 2024-02-20 11:17:47+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:47.100442+05:30, null, null, null).', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'UPDATE "public"."main" SET "fil_no" = \'01-022762-022763\', "fil_dt" = \'2024-02-20 11:17:47\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022762-022763\', "active_fil_dt" = \'2024-02-20 11:17:47\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "public"."main" SET "fil_no" = \'01-022762-022763\', "fil_dt" = \'2024-02-20 11:17:47\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022762-022763\', "active_fil_dt" = \'2024-02-20 11:17:47\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "public"."main" SET "fil_no" = \'01-022762-022763\', "fil_dt" = \'2024-02-20 11:17:47\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022762-022763\', "active_fil_dt" = \'2024-02-20 11:17:47\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "public"."main" SET "fil_no" = :fil_no:, "fil_dt" = :fil_dt:, "usercode" = :usercode:, "mf_active" = :mf_active:, "active_fil_no" = :active_fil_no:, "active_fil_dt" = :active_fil_dt:, "active_reg_year" = :active_reg_year:, "active_casetype_id" = :active_casetype_id:, "reg_no_display" = :reg_no_display:
+WHERE "diary_no" = :diary_no:', [...], false)
+ 6 APPPATH/Models/Filing/RegistrationModel.php(594): CodeIgniter\Database\BaseBuilder->update([...])
+ 7 APPPATH/Controllers/Filing/Registration.php(322): App\Models\Filing\RegistrationModel->update_main([...], '415202023')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-20 11:17:58 --> ErrorException: pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022764-022765, 01-022764-022765, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:58+05:30, 2024-02-20 11:17:58+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:58.087433+05:30, null, null, null). in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'UPDATE "public"...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "public"...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "public"...')
+#4 /var/www/html/system/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "public"...', Array, false)
+#5 /var/www/html/app/Models/Filing/RegistrationModel.php(594): CodeIgniter\Database\BaseBuilder->update(Array)
+#6 /var/www/html/app/Controllers/Filing/Registration.php(322): App\Models\Filing\RegistrationModel->update_main(Array, '415202023')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-20 11:17:58 --> pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022764-022765, 01-022764-022765, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:58+05:30, 2024-02-20 11:17:58+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:58.087433+05:30, null, null, null).
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  null value in column &quot;reg_no_display&quot; of relation &quot;main&quot; violates not-null constraint
+DETAIL:  Failing row contains (415202023, 01-022764-022765, 01-022764-022765, , ASHOK KUMAR SHIVPURI, ASHOK B. CHAJJAR, , 9863, 0, null, 0, null, 0, P, 2024-02-20 11:17:58+05:30, 2024-02-20 11:17:58+05:30, 232, null, 1, 2422, 0, 0, 0, 2023-10-06 17:01:04+05:30, null, C  , null, null, null, null, null, 0, null, , null, 0, , null, N, 2023-10-06 15:37:44+05:30, 2422, 490506, 0, 1, null, 5, null, 0, , 1, 1, A , A , 0, 6340, 0, 0, , 1, , , null, M, 2024, 0, 0, null, 1, 1, 0, 52, null, null, null, 2024-02-20 11:17:58.087433+05:30, null, null, null).', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'UPDATE "public"."main" SET "fil_no" = \'01-022764-022765\', "fil_dt" = \'2024-02-20 11:17:58\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022764-022765\', "active_fil_dt" = \'2024-02-20 11:17:58\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('UPDATE "public"."main" SET "fil_no" = \'01-022764-022765\', "fil_dt" = \'2024-02-20 11:17:58\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022764-022765\', "active_fil_dt" = \'2024-02-20 11:17:58\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE "public"."main" SET "fil_no" = \'01-022764-022765\', "fil_dt" = \'2024-02-20 11:17:58\', "usercode" = \'1\', "mf_active" = \'M\', "active_fil_no" = \'01-022764-022765\', "active_fil_dt" = \'2024-02-20 11:17:58\', "active_reg_year" = \'2024\', "active_casetype_id" = 1, "reg_no_display" = NULL
+WHERE "diary_no" = \'415202023\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(2079): CodeIgniter\Database\BaseConnection->query('UPDATE "public"."main" SET "fil_no" = :fil_no:, "fil_dt" = :fil_dt:, "usercode" = :usercode:, "mf_active" = :mf_active:, "active_fil_no" = :active_fil_no:, "active_fil_dt" = :active_fil_dt:, "active_reg_year" = :active_reg_year:, "active_casetype_id" = :active_casetype_id:, "reg_no_display" = :reg_no_display:
+WHERE "diary_no" = :diary_no:', [...], false)
+ 6 APPPATH/Models/Filing/RegistrationModel.php(594): CodeIgniter\Database\BaseBuilder->update([...])
+ 7 APPPATH/Controllers/Filing/Registration.php(322): App\Models\Filing\RegistrationModel->update_main([...], '415202023')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->register_case()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 12:54:39 --> Undefined array key "short_description"
+in APPPATH/Views/Caveat/get_report_similarity_content.php on line 91.
+ 1 APPPATH/Views/Caveat/get_report_similarity_content.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "short_description"', 'APPPATH/Views/Caveat/get_report_similarity_content.php', 91)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Caveat/get_report_similarity_content.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Caveat/get_report_similarity_content', [], true)
+ 5 APPPATH/Controllers/Caveat/Similarity.php(140): view('Caveat/get_report_similarity_content', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Similarity->get_report()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Similarity))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:11:27 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:13:05 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 02:50:30 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/Diary/search', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:24:53 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:35:23 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:41:05 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:41:28 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:42:16 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 14:44:01 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/Reports/filing/get_content_caveat.php on line 29.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/Reports/filing/get_content_caveat.php', 29)
+ 2 APPPATH/Views/Reports/filing/get_content_caveat.php(29): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/get_content_caveat.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/get_content_caveat', [], true)
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(223): view('Reports/filing/get_content_caveat', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->caveat_search()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 03:56:37 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 03:56:42 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 03:56:47 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-20 15:29:57 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/Filing/Limitation.php on line 74.
+ 1 APPPATH/Controllers/Filing/Limitation.php(74): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Controllers/Filing/Limitation.php', 74)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-20 15:44:56 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: AND &quot;casetype_id&quot; = ''
+                            ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "categor...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "categor...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "categor...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "categor...', Array, false)
+#5 /var/www/html/app/Models/Filing/LimitationModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Limitation.php(66): App\Models\Filing\LimitationModel->getLimitationPeriod('')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-20 15:44:56 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: AND &quot;casetype_id&quot; = ''
+                            ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: AND &quot;casetype_id&quot; = \'\'
+                            ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "category_subcode", "category_subcode1", "category_subcode2", "limitation", "order_cof"
+FROM "master"."m_limitation_period"
+WHERE "display" = \'Y\'
+AND "casetype_id" = \'\'
+AND "submaster_id" = \'0\'
+AND "case_law" = \'0\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "category_subcode", "category_subcode1", "category_subcode2", "limitation", "order_cof"
+FROM "master"."m_limitation_period"
+WHERE "display" = \'Y\'
+AND "casetype_id" = \'\'
+AND "submaster_id" = \'0\'
+AND "case_law" = \'0\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "category_subcode", "category_subcode1", "category_subcode2", "limitation", "order_cof"
+FROM "master"."m_limitation_period"
+WHERE "display" = \'Y\'
+AND "casetype_id" = \'\'
+AND "submaster_id" = \'0\'
+AND "case_law" = \'0\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "category_subcode", "category_subcode1", "category_subcode2", "limitation", "order_cof"
+FROM "master"."m_limitation_period"
+WHERE "display" = :display:
+AND "casetype_id" = :casetype_id:
+AND "submaster_id" = :submaster_id:
+AND "case_law" = :case_law:', [...], false)
+ 6 APPPATH/Models/Filing/LimitationModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Limitation.php(66): App\Models\Filing\LimitationModel->getLimitationPeriod('ROOTPATH/public')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

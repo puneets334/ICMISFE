@@ -1,0 +1,1094 @@
+CRITICAL - 2024-02-27 10:36:38 --> file_get_contents(http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Views/Caveat/get_notice_content.php on line 478.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH/Views/Caveat/get_notice_content.php', 478)
+ 2 APPPATH/Views/Caveat/get_notice_content.php(478): file_get_contents('http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html', true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Caveat/get_notice_content.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Caveat/get_notice_content', [], true)
+ 6 APPPATH/Controllers/Caveat/Notice.php(168): view('Caveat/get_notice_content', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Notice->get_notice()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Notice))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:37:06 --> file_get_contents(http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Views/Caveat/get_notice_content.php on line 478.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH/Views/Caveat/get_notice_content.php', 478)
+ 2 APPPATH/Views/Caveat/get_notice_content.php(478): file_get_contents('http://10.25.78.23:93/caveat_records/2021/2/24958_2020_2024-02-26.html', true)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Caveat/get_notice_content.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Caveat/get_notice_content', [], true)
+ 6 APPPATH/Controllers/Caveat/Notice.php(168): view('Caveat/get_notice_content', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Notice->get_notice()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Notice))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:39:18 --> mkdir(): Permission denied
+in APPPATH/Controllers/Caveat/Notice.php on line 311.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Controllers/Caveat/Notice.php', 311)
+ 2 APPPATH/Controllers/Caveat/Notice.php(311): mkdir('caveat_records/', 493, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Notice->save_caveat_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Notice))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:40:09 --> mkdir(): Permission denied
+in APPPATH/Controllers/Caveat/Notice.php on line 311.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Controllers/Caveat/Notice.php', 311)
+ 2 APPPATH/Controllers/Caveat/Notice.php(311): mkdir('caveat_records/', 493, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Notice->save_caveat_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Notice))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:43:21 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Reports/Filing/Report.php on line 832.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:43:49 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Reports/Filing/Report.php on line 832.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:44:35 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Reports/Filing/Report.php on line 832.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:46:38 --> Cannot use object of type stdClass as array
+in APPPATH/Controllers/Reports/Filing/Report.php on line 833.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 10:56:28 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;UNION&quot;
+LINE 9: ORDER BY &quot;b&quot;.&quot;name&quot; UNION SELECT COUNT(DISTINCT a.diary_no) ...
+                            ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM (...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM (...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM (...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM (...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1642): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2020-02-27', '2024-02-27', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 10:56:28 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;UNION&quot;
+LINE 9: ORDER BY &quot;b&quot;.&quot;name&quot; UNION SELECT COUNT(DISTINCT a.diary_no) ...
+                            ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;UNION&quot;
+LINE 9: ORDER BY &quot;b&quot;.&quot;name&quot; UNION SELECT COUNT(DISTINCT a.diary_no) ...
+                            ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM (SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name" UNION SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name") a')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM (SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name" UNION SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name") a')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM (SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name" UNION SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name") a')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM (SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name" UNION SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\'
+GROUP BY "a"."mul_cat_user_code", "b"."name"
+ORDER BY "b"."name") a', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1642): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2020-02-27', '2024-02-27', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 10:56:51 --> mkdir(): Permission denied
+in APPPATH/Controllers/Caveat/Notice.php on line 311.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): Permission denied', 'APPPATH/Controllers/Caveat/Notice.php', 311)
+ 2 APPPATH/Controllers/Caveat/Notice.php(311): mkdir('caveat_records/', 493, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Caveat\Notice->save_caveat_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Caveat\Notice))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 11:00:18 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT COUNT(DI...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(DI...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DI...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DI...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1637): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2020-02-27', '2024-02-27', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 11:00:18 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1637): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2020-02-27', '2024-02-27', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 11:00:59 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT COUNT(DI...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(DI...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DI...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DI...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1637): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2024-02-27', '2024-02-27', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 11:00:59 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;b&quot;
+LINE 1: ...STINCT a.diary_no) AS s, &quot;a&quot;.&quot;mul_cat_user_code&quot;, &quot;b&quot;.&quot;name&quot;...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(DISTINCT a.diary_no) AS s, "a"."mul_cat_user_code", "b"."name", "a"."mul_cat_user_code" AS "usercode"
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."users" "b" ON "a"."mul_cat_user_code" = "b"."usercode"
+WHERE "a"."mul_cat_user_code" in (55, 94, 663, 1049, 1447, 1486, 1494, 3581)
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2024-02-27\' AND \'2024-02-27\') a
+GROUP BY "a"."mul_cat_user_code", "a"."name"
+ORDER BY "a"."name"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1637): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(824): App\Models\Reports\Filing\ReportModel->change_category_report_data('2024-02-27', '2024-02-27', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_report()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 00:07:53 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Reports/Filing/Report/get_change_category_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 00:36:35 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Reports/Filing/Report/get_change_category_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 00:38:19 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Reports/Filing/Report/get_change_category_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 00:38:55 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Reports/Filing/Report/get_change_category_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 12:10:10 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 1610.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Models/Reports/Filing/ReportModel.php', 1610)
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1610): strtotime(null)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_data(null, '2024-02-27', '1')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 12:11:02 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 1610.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Models/Reports/Filing/ReportModel.php', 1610)
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1610): strtotime(null)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_data(null, '2024-02-27', '1')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 12:11:34 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 1610.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Models/Reports/Filing/ReportModel.php', 1610)
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1610): strtotime(null)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(851): App\Models\Reports\Filing\ReportModel->change_category_report_data(null, '2024-02-27', '1')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 12:12:29 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 1610.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Models/Reports/Filing/ReportModel.php', 1610)
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1610): strtotime(null)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(852): App\Models\Reports\Filing\ReportModel->change_category_report_data(null, '2024-02-27', '1')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 12:13:17 --> Undefined array key "from_date"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 850.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(850): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "from_date"', 'APPPATH/Controllers/Reports/Filing/Report.php', 850)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 15:13:46 --> ErrorException: pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_n...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_n...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_n...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_n...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 15:13:46 --> pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$\'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 15:15:15 --> ErrorException: pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_n...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_n...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_n...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_n...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 15:15:15 --> pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$\'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "display", "e_date"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 15:27:51 --> ErrorException: pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_n...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_n...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_n...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_n...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 15:27:51 --> pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column reference &quot;display&quot; is ambiguous
+LINE 1: ...$\'ORDER BY e_date, submaster_id) AS submaster_id, &quot;a&quot;.&quot;displ...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT *
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT *
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1702): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:32:09 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:32:12 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:32:14 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:32:30 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:32:50 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:33:10 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:33:55 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:33:59 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:35:09 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 15:35:48 --> Undefined variable $casetype
+in APPPATH/Views/Common/Component/component_court_html.php on line 51.
+ 1 APPPATH/Views/Common/Component/component_court_html.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $casetype', 'APPPATH/Views/Common/Component/component_court_html.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Common/Component/component_court_html.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Common/Component/component_court_html', [], true)
+ 5 APPPATH/Helpers/common_helper.php(1016): view('Common/Component/component_court_html', [...])
+ 6 APPPATH/Views/Reports/filing/high_court_report.php(10): component_court_html('H')
+ 7 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/high_court_report.php')
+ 8 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/high_court_report', [], true)
+10 APPPATH/Controllers/Reports/Filing/Report.php(93): view('Reports/filing/high_court_report')
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 15:36:32 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, '...
+               ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "DISTINC...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "DISTINC...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "DISTINC...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "DISTINC...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 15:36:32 --> pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, '...
+               ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, \'...
+               ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-27 16:35:01 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, '...
+               ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "DISTINC...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "DISTINC...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "DISTINC...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "DISTINC...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-27 16:35:01 --> pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, '...
+               ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;DISTINCT&quot; does not exist
+LINE 1: SELECT &quot;DISTINCT&quot; &quot;diary_no&quot;, string_agg(concat(sub_name1, \'...
+               ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "DISTINCT" "diary_no", string_agg(concat(sub_name1, \'-\', "sub_name2", \'-\', "sub_name3", \'-\', sub_name4), \'$\'ORDER BY e_date, submaster_id) AS submaster_id, "a"."display" AS "display", to_char(e_date, \'YYYY-MM-DD\') AS e_date
+FROM (SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\' UNION SELECT "diary_no", "sub_name1", "sub_name2", "sub_name3", "sub_name4", "e_date", "submaster_id", "a"."display"
+FROM "mul_category_a" "a"
+JOIN "master"."submaster" "b" ON "a"."submaster_id"="b"."id"
+WHERE "a"."mul_cat_user_code" = \'663\'
+AND "b"."display" = \'Y\'
+AND DATE(e_date) BETWEEN \'2020-02-27\' AND \'2024-02-27\') a
+GROUP BY "diary_no", "a"."display", "e_date"', [], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:41:41 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH/Database/BaseBuilder.php on line 553.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(553): strpos([...], ',')
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->from(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:43:55 --> strpos(): Argument #1 ($haystack) must be of type string, array given
+in SYSTEMPATH/Database/BaseBuilder.php on line 553.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(553): strpos([...], ',')
+ 2 APPPATH/Models/Reports/Filing/ReportModel.php(1704): CodeIgniter\Database\BaseBuilder->from(Object(CodeIgniter\Database\Postgre\Builder), true)
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(850): App\Models\Reports\Filing\ReportModel->change_category_report_details('2020-02-27', '2024-02-27', '1', '663')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 05:16:34 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 05:17:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:47:52 --> Undefined array key "s"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 858.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(858): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "s"', 'APPPATH/Controllers/Reports/Filing/Report.php', 858)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 05:19:26 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/File_trap/receive', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:49:40 --> Undefined array key "s"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 858.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(858): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "s"', 'APPPATH/Controllers/Reports/Filing/Report.php', 858)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_change_category_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:54:49 --> Undefined array key "is_transComplete"
+in APPPATH/Controllers/Filing/File_trap.php on line 413.
+ 1 APPPATH/Controllers/Filing/File_trap.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_transComplete"', 'APPPATH/Controllers/Filing/File_trap.php', 413)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\File_trap->receive()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\File_trap))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:55:31 --> Undefined array key "is_transComplete"
+in APPPATH/Controllers/Filing/File_trap.php on line 413.
+ 1 APPPATH/Controllers/Filing/File_trap.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_transComplete"', 'APPPATH/Controllers/Filing/File_trap.php', 413)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\File_trap->receive()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\File_trap))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 16:55:53 --> Undefined array key "is_transComplete"
+in APPPATH/Controllers/Filing/File_trap.php on line 413.
+ 1 APPPATH/Controllers/Filing/File_trap.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_transComplete"', 'APPPATH/Controllers/Filing/File_trap.php', 413)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\File_trap->receive()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\File_trap))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 17:00:23 --> Undefined array key "is_transComplete"
+in APPPATH/Controllers/Filing/File_trap.php on line 413.
+ 1 APPPATH/Controllers/Filing/File_trap.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_transComplete"', 'APPPATH/Controllers/Filing/File_trap.php', 413)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\File_trap->receive()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\File_trap))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 17:00:41 --> Undefined array key "is_transComplete"
+in APPPATH/Controllers/Filing/File_trap.php on line 413.
+ 1 APPPATH/Controllers/Filing/File_trap.php(413): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "is_transComplete"', 'APPPATH/Controllers/Filing/File_trap.php', 413)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\File_trap->receive()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\File_trap))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 17:55:28 --> Undefined array key 0
+in APPPATH/Models/Filing/RegistrationModel.php on line 232.
+ 1 APPPATH/Models/Filing/RegistrationModel.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Filing/RegistrationModel.php', 232)
+ 2 APPPATH/Controllers/Filing/Registration.php(54): App\Models\Filing\RegistrationModel->get_lowerct('379332023', '7')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 06:26:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-27 17:56:55 --> Undefined array key 0
+in APPPATH/Models/Filing/RegistrationModel.php on line 232.
+ 1 APPPATH/Models/Filing/RegistrationModel.php(232): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Models/Filing/RegistrationModel.php', 232)
+ 2 APPPATH/Controllers/Filing/Registration.php(54): App\Models\Filing\RegistrationModel->get_lowerct('379332023', '7')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Registration->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Registration))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

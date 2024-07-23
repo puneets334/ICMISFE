@@ -1,0 +1,252 @@
+CRITICAL - 2023-08-26 01:36:07 --> Call to undefined function App\Controllers\getClientIP()
+in APPPATH/Controllers/Login.php on line 149.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:39:01 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:39:49 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:39:50 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:41:30 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:41:30 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:41:40 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:41:41 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:42:37 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:42:37 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:42:39 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:42:40 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:42:40 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:43:46 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:43:47 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:43:47 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:44:07 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:44:07 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:44:15 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:53:07 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:53:24 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:53:24 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:53:25 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:53:26 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\dashboard/DefaultController::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\dashboard/DefaultController::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:54:10 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:54:10 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:54:11 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:54:11 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:54:58 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/Dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/Dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('Dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:55:37 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: \App\Controllers\/Dashboard::index
+in SYSTEMPATH/Router/Router.php on line 466.
+ 1 SYSTEMPATH/Router/Router.php(466): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\/Dashboard::index')
+ 2 SYSTEMPATH/Router/Router.php(181): CodeIgniter\Router\Router->checkRoutes('Dashboard')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Dashboard')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:58:23 --> Undefined global variable $_SESSION
+in APPPATH/Controllers/Dashboard.php on line 17.
+ 1 APPPATH/Controllers/Dashboard.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH/Controllers/Dashboard.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 02:58:37 --> Undefined global variable $_SESSION
+in APPPATH/Controllers/Dashboard.php on line 17.
+ 1 APPPATH/Controllers/Dashboard.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined global variable $_SESSION', 'APPPATH/Controllers/Dashboard.php', 17)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Dashboard->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

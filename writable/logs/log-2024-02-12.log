@@ -1,0 +1,1134 @@
+ERROR - 2024-02-12 11:01:03 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:03 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:11 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:11 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:13 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:13 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:13 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:13 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:54 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:54 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 11:01:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 11:01:57 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 15:04:03 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 1: ...'1', '1', '20', '60', '16-12-2022', '10/04/2023', '', '', 'Y...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ca...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ca...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ca...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ca...', Array, false)
+#5 /var/www/html/system/Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+#6 /var/www/html/system/BaseModel.php(750): CodeIgniter\Model->doInsert(Array)
+#7 /var/www/html/system/Model.php(695): CodeIgniter\BaseModel->insert(Array, true)
+#8 /var/www/html/app/Models/Filing/LimitationModel.php(130): CodeIgniter\Model->insert(Array)
+#9 /var/www/html/app/Controllers/Filing/Limitation.php(81): App\Models\Filing\LimitationModel->insertCaseLimit(Array)
+#10 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Limitation->InsertAction()
+#11 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+#12 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-02-12 15:04:03 --> pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 1: ...'1', '1', '20', '60', '16-12-2022', '10/04/2023', '', '', 'Y...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 1: ...\'1\', \'1\', \'20\', \'60\', \'16-12-2022\', \'10/04/2023\', \'\', \'\', \'Y...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "case_limit" ("limit_days", "descr", "case_nature", "under_section", "o_s", "pol", "o_d", "f_d", "c_d_a", "d_o_d", "case_lim_display", "diary_no", "lowerct_id", "order_cof", "d_o_a", "case_lmt_user", "updated_on", "updated_by", "updated_by_ip") VALUES (\'60\', \'<U>PETITION HAS BEEN FILED WITHIN 60 DAYS PETITION IS WITHIN TIME</U>\', \'1\', \'1\', \'20\', \'60\', \'16-12-2022\', \'10/04/2023\', \'\', \'\', \'Y\', \'411132023\', 1, \'O\', \'\', \'1\', \'2024-02-12 15:04:03\', \'1\', \'10.40.186.15\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "case_limit" ("limit_days", "descr", "case_nature", "under_section", "o_s", "pol", "o_d", "f_d", "c_d_a", "d_o_d", "case_lim_display", "diary_no", "lowerct_id", "order_cof", "d_o_a", "case_lmt_user", "updated_on", "updated_by", "updated_by_ip") VALUES (\'60\', \'<U>PETITION HAS BEEN FILED WITHIN 60 DAYS PETITION IS WITHIN TIME</U>\', \'1\', \'1\', \'20\', \'60\', \'16-12-2022\', \'10/04/2023\', \'\', \'\', \'Y\', \'411132023\', 1, \'O\', \'\', \'1\', \'2024-02-12 15:04:03\', \'1\', \'10.40.186.15\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "case_limit" ("limit_days", "descr", "case_nature", "under_section", "o_s", "pol", "o_d", "f_d", "c_d_a", "d_o_d", "case_lim_display", "diary_no", "lowerct_id", "order_cof", "d_o_a", "case_lmt_user", "updated_on", "updated_by", "updated_by_ip") VALUES (\'60\', \'<U>PETITION HAS BEEN FILED WITHIN 60 DAYS PETITION IS WITHIN TIME</U>\', \'1\', \'1\', \'20\', \'60\', \'16-12-2022\', \'10/04/2023\', \'\', \'\', \'Y\', \'411132023\', 1, \'O\', \'\', \'1\', \'2024-02-12 15:04:03\', \'1\', \'10.40.186.15\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "case_limit" ("limit_days", "descr", "case_nature", "under_section", "o_s", "pol", "o_d", "f_d", "c_d_a", "d_o_d", "case_lim_display", "diary_no", "lowerct_id", "order_cof", "d_o_a", "case_lmt_user", "updated_on", "updated_by", "updated_by_ip") VALUES (:limit_days:, :descr:, :case_nature:, :under_section:, :o_s:, :pol:, :o_d:, :f_d:, :c_d_a:, :d_o_d:, :case_lim_display:, :diary_no:, :lowerct_id:, :order_cof:, :d_o_a:, :case_lmt_user:, :updated_on:, :updated_by:, :updated_by_ip:)', [...], false)
+ 6 SYSTEMPATH/Model.php(303): CodeIgniter\Database\BaseBuilder->insert()
+ 7 SYSTEMPATH/BaseModel.php(750): CodeIgniter\Model->doInsert([...])
+ 8 SYSTEMPATH/Model.php(695): CodeIgniter\BaseModel->insert([...], true)
+ 9 APPPATH/Models/Filing/LimitationModel.php(130): CodeIgniter\Model->insert([...])
+10 APPPATH/Controllers/Filing/Limitation.php(81): App\Models\Filing\LimitationModel->insertCaseLimit([...])
+11 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->InsertAction()
+12 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+13 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 03:35:45 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 04:03:48 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/get_party_data', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 15:57:12 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Advocate.php on line 435.
+ 1 APPPATH/Controllers/Filing/Advocate.php(435): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Advocate.php', 435)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->updateAdvocate()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 16:10:31 --> Undefined array key "parties"
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 66.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "parties"', 'APPPATH/Models/Reports/Filing/ReportModel.php', 66)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(144): App\Models\Reports\Filing\ReportModel->getDiary([...])
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->diary_search()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:22:57 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:22:57 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:22:58 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:22:58 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:22:59 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:22:59 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 04:52:59 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:00 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:00 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:02 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:02 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 04:53:02 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:04 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:04 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:05 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:05 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 04:53:07 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:23:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:23:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 04:55:35 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:30:08 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.3&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.3'
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.3', 'A', '2218')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.3-A-2218')
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:30:08 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.3&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.3'
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.3&quot;
+LINE 5: AND &quot;pet_res_no&quot; = \'2.3\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.3\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.3\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.3\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = :diary_no:
+AND "pet_res" = :pet_res:
+AND "pet_res_no" = :pet_res_no:
+AND "adv_type" = :adv_type:
+AND "advocate_id" = :advocate_id:
+AND "display" = :display:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.3', 'A', '2218')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.3-A-2218')
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:30:40 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.2&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.2'
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.2', 'A', '2218')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.2-A-2218')
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:30:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.2&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.2'
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.2&quot;
+LINE 5: AND &quot;pet_res_no&quot; = \'2.2\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.2\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.2\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.2\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = :diary_no:
+AND "pet_res" = :pet_res:
+AND "pet_res_no" = :pet_res_no:
+AND "adv_type" = :adv_type:
+AND "advocate_id" = :advocate_id:
+AND "display" = :display:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.2', 'A', '2218')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.2-A-2218')
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-12 16:31:11 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.1&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.1'
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *\nFROM "...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *\nFROM "...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM "...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.1', 'A', '2218')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.1-A-2218')
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-12 16:31:11 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.1&quot;
+LINE 5: AND &quot;pet_res_no&quot; = '2.1'
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;2.1&quot;
+LINE 5: AND &quot;pet_res_no&quot; = \'2.1\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.1\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.1\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = \'22022\'
+AND "pet_res" = \'R\'
+AND "pet_res_no" = \'2.1\'
+AND "adv_type" = \'A\'
+AND "advocate_id" = \'2218\'
+AND "display" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "public"."advocate"
+WHERE "diary_no" = :diary_no:
+AND "pet_res" = :pet_res:
+AND "pet_res_no" = :pet_res_no:
+AND "adv_type" = :adv_type:
+AND "advocate_id" = :advocate_id:
+AND "display" = :display:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(42): App\Models\Filing\AdvocateModel->get_advocate_by_sr_no_show('22022', 'R', '2.1', 'A', '2218')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->index('R-2.1-A-2218')
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 23:57:55 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Copying/Copying/application_status_update', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-12 23:58:33 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Copying/Copying/application_status_update', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

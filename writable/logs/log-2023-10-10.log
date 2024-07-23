@@ -1,0 +1,115 @@
+ERROR - 2023-10-10 12:23:44 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist in /var/www/html/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 69)
+#1 /var/www/html/system/Database/Postgre/Connection.php(69): pg_connect('host=10.25.78.6...')
+#2 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/Filing/DiaryentryModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Supreme_court/Filing/DiaryentryController.php(48): App\Models\Filing\DiaryentryModel->get_court_type()
+#7 /var/www/html/app/Controllers/Supreme_court/Filing/DiaryentryController.php(29): App\Controllers\Supreme_court\Filing\DiaryentryController->get_court_type()
+#8 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Supreme_court\Filing\DiaryentryController->index()
+#9 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\Filing\DiaryentryController))
+#10 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-10-10 12:23:44 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "m_from_court"
+WHERE "display" = :display:', [...], false)
+ 3 APPPATH/Models/Filing/DiaryentryModel.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH/Controllers/Supreme_court/Filing/DiaryentryController.php(48): App\Models\Filing\DiaryentryModel->get_court_type()
+ 5 APPPATH/Controllers/Supreme_court/Filing/DiaryentryController.php(29): App\Controllers\Supreme_court\Filing\DiaryentryController->get_court_type()
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\Filing\DiaryentryController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\Filing\DiaryentryController))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 01:53:55 --> Unable to connect to the database.
+
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/Menu_model.php(21): CodeIgniter\Database\BaseConnection->query('select distinct m.menu_nm,substr(m.menu_id,1,2) as menu_id,m.url as url, m.icon, m.old_smenu_id from user_role_master_mapping urmm inner join role_master rm on urmm.role_master_id=rm.id
+inner join role_menu_mapping rmm on rm.id=rmm.role_master_id inner join menu m on m.menu_id like 
+ CONCAT(substr(rmm.menu_id,1,2), \'%\') 
+where substr(m.menu_id,3)=\'0000000000\' and m.menu_id is not null and urmm.display=\'Y\' and rm.display=\'Y\' and rmm.display=\'Y\' and m.display=\'Y\' 
+and urmm.usercode=1 AND cast(substr(m.menu_id,1,2) as integer) =01 order by m.menu_nm')
+ 3 APPPATH/Views/templates/menu.php(22): App\Models\Menu_model->get_Main_menus('1')
+ 4 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/menu.php')
+ 5 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/menu', [], true)
+ 7 APPPATH/Views/templates/leftsidebar.php(8): view('templates/menu')
+ 8 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/leftsidebar.php')
+ 9 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/leftsidebar', [], true)
+11 APPPATH/Views/templates/index.php(159): view('templates/leftsidebar')
+12 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/index.php')
+13 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/index', [], true)
+15 APPPATH/Controllers/Supreme_court/DefaultController.php(26): view('templates/index', [...])
+16 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+17 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+18 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-10 02:14:02 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist in /var/www/html/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 69)
+#1 /var/www/html/system/Database/Postgre/Connection.php(69): pg_connect('host=10.25.78.6...')
+#2 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+#6 /var/www/html/app/Controllers/Login.php(34): App\Models\LoginModel->checkLogin('1', '2021')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-10 02:14:02 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "empid" = :empid:
+AND "userpass" = :userpass:
+AND "display" = :display:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+ 4 APPPATH/Controllers/Login.php(34): App\Models\LoginModel->checkLogin('1', '2021')
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-10 02:47:39 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist in /var/www/html/system/Database/Postgre/Connection.php:69
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_connect(): U...', '/var/www/html/s...', 69)
+#1 /var/www/html/system/Database/Postgre/Connection.php(69): pg_connect('host=10.25.78.6...')
+#2 /var/www/html/system/Database/BaseConnection.php(382): CodeIgniter\Database\Postgre\Connection->connect(false)
+#3 /var/www/html/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM "...', Array, false)
+#5 /var/www/html/app/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+#6 /var/www/html/app/Controllers/Login.php(34): App\Models\LoginModel->checkLogin('1', '2021')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-10-10 02:47:39 --> Unable to connect to the database.
+Main connection [Postgre]: pg_connect(): Unable to connect to PostgreSQL server: FATAL:  database &quot;sci_cmis_final_10082023&quot; does not exist
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM "users"
+WHERE "empid" = :empid:
+AND "userpass" = :userpass:
+AND "display" = :display:
+ LIMIT 1', [...], false)
+ 3 APPPATH/Models/LoginModel.php(33): CodeIgniter\Database\BaseBuilder->get(1)
+ 4 APPPATH/Controllers/Login.php(34): App\Models\LoginModel->checkLogin('1', '2021')
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Login->checkLogin()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

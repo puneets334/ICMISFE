@@ -1,0 +1,1004 @@
+CRITICAL - 2024-02-24 10:56:56 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:56:59 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:57:27 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:57:38 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:59:03 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:59:55 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 10:59:58 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 11:00:02 --> Undefined variable $usersection
+in APPPATH/Views/Reports/filing/defective_case_search_view.php on line 64.
+ 1 APPPATH/Views/Reports/filing/defective_case_search_view.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usersection', 'APPPATH/Views/Reports/filing/defective_case_search_view.php', 64)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Reports/filing/defective_case_search_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Reports/filing/defective_case_search_view', [], true)
+ 5 APPPATH/Controllers/Reports/Filing/Report.php(94): view('Reports/filing/defective_case_search_view')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_search_view()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 12:16:38 --> Undefined array key "section_name"
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 1312.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(1312): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "section_name"', 'APPPATH/Models/Reports/Filing/ReportModel.php', 1312)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(806): App\Models\Reports\Filing\ReportModel->defective_case_count([...])
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_defective_cases_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:37:03 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:37:03 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:37:13 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:37:13 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:37:18 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:37:18 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:38:26 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:38:26 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:38:27 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:38:27 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:08:43 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:08:43 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:39:09 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:39:09 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:39:18 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:39:18 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:39:19 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:39:19 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:40:53 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:40:53 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:40:57 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:40:57 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:42:25 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:42:25 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'R\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'R', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 15:42:26 --> ErrorException: pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 15:42:26 --> pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  missing FROM-clause entry for table &quot;advocate&quot;
+LINE 3: JOIN &quot;master&quot;.&quot;bar&quot; ON &quot;bar&quot;.&quot;bar_id&quot;=&quot;advocate&quot;.&quot;advocate_i...
+                                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = \'25412023\'
+AND "display" = \'Y\'
+AND "pet_res" = \'P\'
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "pet_res_no", "adv", "adv_type", "advocate_id", COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) AS pet_res_show_no, "name", "is_ac", "isdead", "if_aor", "if_sen", "if_other", "aor_code"
+FROM "public"."advocate_a"
+JOIN "master"."bar" ON "bar"."bar_id"="advocate"."advocate_id"
+WHERE "diary_no" = :diary_no:
+AND "display" = :display:
+AND "pet_res" = :pet_res:
+AND COALESCE(NULLIF(pet_res_show_no, \'\'), TRIM(CAST(pet_res_no AS VARCHAR)), TRIM(CAST(pet_res_show_no AS VARCHAR))) = \'1\'', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(317): App\Models\Filing\AdvocateModel->get_advocate('25412023', 'P', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->get_party_data()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:16:25 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:16:32 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:16:32 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:24:22 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:24:23 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:27:27 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:27:27 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 15:57:40 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Advocate.php on line 130.
+ 1 APPPATH/Controllers/Filing/Advocate.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Advocate.php', 130)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->addAdvocate()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:28:45 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:30:56 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:31:16 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:31:16 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 16:01:18 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Advocate.php on line 130.
+ 1 APPPATH/Controllers/Filing/Advocate.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Advocate.php', 130)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->addAdvocate()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:31:54 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 16:02:02 --> Undefined array key 0
+in APPPATH/Controllers/Filing/Advocate.php on line 124.
+ 1 APPPATH/Controllers/Filing/Advocate.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Controllers/Filing/Advocate.php', 124)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->addAdvocate()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 04:52:05 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/Party/copy_party_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:02:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/Party/copy_party_details', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:22:48 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:22:53 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:22:54 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:22:59 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-24 05:30:26 --> syntax error, unexpected variable "$caveat_details", expecting "function" or "const"
+in APPPATH/Controllers/Caveat/Notice.php on line 75.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Caveat/Notice')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('Caveat/Notice')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Caveat/Notice')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-24 17:31:53 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;276,290&quot; in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a".*, "...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a".*, "...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a".*, "...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a".*, "...', Array, false)
+#5 /var/www/html/app/Models/Filing/CoramModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Coram.php(70): App\Models\Filing\CoramModel->coram_detail('1122023')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Coram->coram_add()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Coram))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-24 17:31:53 --> pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;276,290&quot;
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type integer: &quot;276,290&quot;', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a".*, "u"."empid", "u"."name"
+FROM (SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "c"."diary_no", \'C\' AS notbef, "c"."ent_dt", "n"."res_add", "c"."jud" as "coram", "j"."judge_seniority", "c"."usercode" FROM "public"."coram_a" "c" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(c.jud AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "c"."res_id" WHERE "c"."diary_no" = \'1122023\' AND "c"."to_dt" IS NULL AND "c"."display" = \'Y\' GROUP BY "c"."diary_no", "j"."jcode", "c"."ent_dt", "n"."res_add", "c"."jud", "c"."usercode") "uwrp0" UNION SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "h"."diary_no", \'C\' AS notbef, "h"."ent_dt", "n"."res_add", CAST(h.coram AS int), "j"."judge_seniority", "h"."usercode" FROM "public"."heardt_a" "h" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(h.coram AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "h"."list_before_remark" WHERE "h"."diary_no" = \'1122023\' GROUP BY "h"."diary_no", "j"."jcode", "h"."ent_dt", "n"."res_add", "h"."coram", "h"."usercode") "uwrp1"  UNION SELECT * FROM (SELECT "j"."jcode", concat(j.jname, \'[\', "j"."abbreviation", \']\') as jname, "n"."diary_no", "n"."notbef", "n"."ent_dt", "nbs"."res_add", 0, "j"."judge_seniority", "n"."usercode" FROM "public"."not_before" "n" LEFT JOIN "master"."judge" "j" ON "j"."jcode" = "n"."j1" LEFT JOIN "master"."not_before_reason" "nbs" ON "n"."res_id" = "nbs"."res_id" WHERE "n"."diary_no" = \'1122023\' ORDER BY "j"."judge_seniority") "uwrp2") "a"
+LEFT JOIN "master"."users" "u" ON "u"."usercode" = "a"."usercode"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a".*, "u"."empid", "u"."name"
+FROM (SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "c"."diary_no", \'C\' AS notbef, "c"."ent_dt", "n"."res_add", "c"."jud" as "coram", "j"."judge_seniority", "c"."usercode" FROM "public"."coram_a" "c" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(c.jud AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "c"."res_id" WHERE "c"."diary_no" = \'1122023\' AND "c"."to_dt" IS NULL AND "c"."display" = \'Y\' GROUP BY "c"."diary_no", "j"."jcode", "c"."ent_dt", "n"."res_add", "c"."jud", "c"."usercode") "uwrp0" UNION SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "h"."diary_no", \'C\' AS notbef, "h"."ent_dt", "n"."res_add", CAST(h.coram AS int), "j"."judge_seniority", "h"."usercode" FROM "public"."heardt_a" "h" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(h.coram AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "h"."list_before_remark" WHERE "h"."diary_no" = \'1122023\' GROUP BY "h"."diary_no", "j"."jcode", "h"."ent_dt", "n"."res_add", "h"."coram", "h"."usercode") "uwrp1"  UNION SELECT * FROM (SELECT "j"."jcode", concat(j.jname, \'[\', "j"."abbreviation", \']\') as jname, "n"."diary_no", "n"."notbef", "n"."ent_dt", "nbs"."res_add", 0, "j"."judge_seniority", "n"."usercode" FROM "public"."not_before" "n" LEFT JOIN "master"."judge" "j" ON "j"."jcode" = "n"."j1" LEFT JOIN "master"."not_before_reason" "nbs" ON "n"."res_id" = "nbs"."res_id" WHERE "n"."diary_no" = \'1122023\' ORDER BY "j"."judge_seniority") "uwrp2") "a"
+LEFT JOIN "master"."users" "u" ON "u"."usercode" = "a"."usercode"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a".*, "u"."empid", "u"."name"
+FROM (SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "c"."diary_no", \'C\' AS notbef, "c"."ent_dt", "n"."res_add", "c"."jud" as "coram", "j"."judge_seniority", "c"."usercode" FROM "public"."coram_a" "c" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(c.jud AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "c"."res_id" WHERE "c"."diary_no" = \'1122023\' AND "c"."to_dt" IS NULL AND "c"."display" = \'Y\' GROUP BY "c"."diary_no", "j"."jcode", "c"."ent_dt", "n"."res_add", "c"."jud", "c"."usercode") "uwrp0" UNION SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "h"."diary_no", \'C\' AS notbef, "h"."ent_dt", "n"."res_add", CAST(h.coram AS int), "j"."judge_seniority", "h"."usercode" FROM "public"."heardt_a" "h" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(h.coram AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "h"."list_before_remark" WHERE "h"."diary_no" = \'1122023\' GROUP BY "h"."diary_no", "j"."jcode", "h"."ent_dt", "n"."res_add", "h"."coram", "h"."usercode") "uwrp1"  UNION SELECT * FROM (SELECT "j"."jcode", concat(j.jname, \'[\', "j"."abbreviation", \']\') as jname, "n"."diary_no", "n"."notbef", "n"."ent_dt", "nbs"."res_add", 0, "j"."judge_seniority", "n"."usercode" FROM "public"."not_before" "n" LEFT JOIN "master"."judge" "j" ON "j"."jcode" = "n"."j1" LEFT JOIN "master"."not_before_reason" "nbs" ON "n"."res_id" = "nbs"."res_id" WHERE "n"."diary_no" = \'1122023\' ORDER BY "j"."judge_seniority") "uwrp2") "a"
+LEFT JOIN "master"."users" "u" ON "u"."usercode" = "a"."usercode"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a".*, "u"."empid", "u"."name"
+FROM (SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "c"."diary_no", \'C\' AS notbef, "c"."ent_dt", "n"."res_add", "c"."jud" as "coram", "j"."judge_seniority", "c"."usercode" FROM "public"."coram_a" "c" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(c.jud AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "c"."res_id" WHERE "c"."diary_no" = \'1122023\' AND "c"."to_dt" IS NULL AND "c"."display" = \'Y\' GROUP BY "c"."diary_no", "j"."jcode", "c"."ent_dt", "n"."res_add", "c"."jud", "c"."usercode") "uwrp0" UNION SELECT * FROM (SELECT "j"."jcode", string_agg(concat(j.jname, \'[\', "j"."abbreviation", \']\'), \'\') as jname, "h"."diary_no", \'C\' AS notbef, "h"."ent_dt", "n"."res_add", CAST(h.coram AS int), "j"."judge_seniority", "h"."usercode" FROM "public"."heardt_a" "h" JOIN "master"."judge" "j" ON "j"."jcode" = ANY(string_to_array(CAST(h.coram AS VARCHAR), \',\')::int[]) > \'0\' LEFT JOIN "master"."not_before_reason" "n" ON "n"."res_id" = "h"."list_before_remark" WHERE "h"."diary_no" = \'1122023\' GROUP BY "h"."diary_no", "j"."jcode", "h"."ent_dt", "n"."res_add", "h"."coram", "h"."usercode") "uwrp1"  UNION SELECT * FROM (SELECT "j"."jcode", concat(j.jname, \'[\', "j"."abbreviation", \']\') as jname, "n"."diary_no", "n"."notbef", "n"."ent_dt", "nbs"."res_add", 0, "j"."judge_seniority", "n"."usercode" FROM "public"."not_before" "n" LEFT JOIN "master"."judge" "j" ON "j"."jcode" = "n"."j1" LEFT JOIN "master"."not_before_reason" "nbs" ON "n"."res_id" = "nbs"."res_id" WHERE "n"."diary_no" = \'1122023\' ORDER BY "j"."judge_seniority") "uwrp2") "a"
+LEFT JOIN "master"."users" "u" ON "u"."usercode" = "a"."usercode"', [], false)
+ 6 APPPATH/Models/Filing/CoramModel.php(263): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Coram.php(70): App\Models\Filing\CoramModel->coram_detail('1122023')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Coram->coram_add()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Coram))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

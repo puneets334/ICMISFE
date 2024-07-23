@@ -1,0 +1,158 @@
+.nav-breadcrumb { display: block;}
+.nav-breadcrumb li {  display: inline; }
+.nav-breadcrumb li a.first { border-radius:5px 0 0 5px; padding-left:40px !important;}
+.nav-breadcrumb li a, .nav-breadcrumb li a:link, .nav-breadcrumb li a:visited {
+    color: #000; 
+    display: block;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: -18px;
+    padding: 11px 40px 8px 40px;
+    position: relative; 
+    text-decoration: none; 
+    font-family:Arial, Helvetica, sans-serif; }
+
+.nav-breadcrumb li a { 
+    background-image: url('../../images/bg-nav-breadcrumb');  
+    background-repeat: no-repeat;
+    background-position: 100% 3px;
+    position: relative;}
+.nav-breadcrumb li a.active { 
+    color: #fff; 
+    background-position: 100% -51px; 
+    font-weight: bold;
+    cursor: pointer; 
+    background-image: url('../../images/bg-nav-breadcrumb'); 
+    background-repeat: no-repeat;}
+.nav-breadcrumb li a.unactive { 
+    color: #fff; 
+    background-position: 100% -106px; 
+    cursor: pointer; background-image: url('../../images/bg-nav-breadcrumb');   
+    background-repeat: no-repeat;}
+.nav-breadcrumb li a span { 
+    padding:3px 5px;
+    margin-right:5px;
+    border-radius:50%;  
+    font-size:12px; 
+    font-weight:bold; }
+
+.heading{
+    background-color: #0183a7;
+    color:white !important;
+}
+
+.heading h3{
+    background-color: #0183a7;
+    color:white !important;
+    font-weight: bold;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 700;
+    font-style: normal;
+    font-weight: normal;
+ 
+}
+.row {
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+/*start loader*/
+#cover-spin {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:block;
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:#e53935;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
+[class*=sidebar-dark-] .nav-sidebar>.nav-item.menu-open>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item:hover>.nav-link, [class*=sidebar-dark-] .nav-sidebar>.nav-item>.nav-link:focus {
+    /* background-color: rgba(255,255,255,.1); */
+    color: #fff;
+    background-color: lightskyblue !important;
+}
+.main-sidebar, .main-sidebar::before {
+    width: 310px !important;
+}
+
+.content-wrapper{
+        margin-left: 310px !important;
+    }
+.sidebar-mini .main-sidebar .nav-link, .sidebar-mini-md .main-sidebar .nav-link, .sidebar-mini-xs .main-sidebar .nav-link {
+    width: calc(310px - 0.5rem * 2)!important;
+}
+
+.nav-sidebar .menu_level2 {
+    padding-left: 55px!important;
+}
+.nav-sidebar .menu_level3 p {
+    padding-left: 60px!important;
+}
+.nav-sidebar .menu_level4 p {
+    padding-left: 80px!important;
+}
+.nav-sidebar .menu_level5 p {
+    padding-left: 90px!important;
+}
+
+
+.open_menu_level {
+    padding-left: 75px!important;
+    text-wrap: balance !important;
+}
+.open_menu_level2 {
+    padding-left: 55px!important;
+    text-wrap: balance !important;
+}
+.open_menu_level3 {
+    padding-left: 70px!important;
+    text-wrap: balance !important;
+}
+.open_menu_level4 {
+    padding-left: 85px!important;
+    text-wrap: balance !important;
+}
+.open_menu_level5 {
+    padding-left: 110px!important;
+    text-wrap: balance !important;
+}
+.open_menu_level6 {
+    padding-left: 120px!important;
+    text-wrap: balance !important;
+}
+ .brand-link {
+    border-bottom: 1px solid #2e6da5 !important;
+     width: 100%!important;
+}
+.user-panel {
+    border-bottom: 1px solid #2e6da5 !important;
+}
+body {
+    overflow-x: hidden !important; /* Hide scrollbars */
+}
+/*end loader*/

@@ -1,0 +1,269 @@
+CRITICAL - 2024-03-20 00:26:35 --> Trying to access array offset on value of type null
+in APPPATH/Views/sci_main_header.php on line 36.
+ 1 APPPATH/Views/sci_main_header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/sci_main_header.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sci_main_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('sci_main_header', [], true)
+ 5 APPPATH/Views/templates/dashboard.php(1): view('sci_main_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/dashboard.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/dashboard', [], true)
+ 9 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/dashboard', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 12:13:28 --> file_get_contents(http://10.25.78.60/supreme_court/jud_ord_html_pdf/2014/22405/110199.pdf): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+
+in APPPATH/Controllers/Copying/Copying.php on line 70.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(http://10.25.78.60/supreme_court/jud_ord_html_pdf/2014/22405/110199.pdf): Failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+', 'APPPATH/Controllers/Copying/Copying.php', 70)
+ 2 APPPATH/Controllers/Copying/Copying.php(70): file_get_contents('http://10.25.78.60/supreme_court/jud_ord_html_pdf/2014/22405/110199.pdf')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Copying\Copying->download_order()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Copying\Copying))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 03:31:47 --> Trying to access array offset on value of type null
+in APPPATH/Views/sci_main_header.php on line 36.
+ 1 APPPATH/Views/sci_main_header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/sci_main_header.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sci_main_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('sci_main_header', [], true)
+ 5 APPPATH/Views/templates/dashboard.php(1): view('sci_main_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/dashboard.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/dashboard', [], true)
+ 9 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/dashboard', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 03:31:50 --> Trying to access array offset on value of type null
+in APPPATH/Views/sci_main_header.php on line 36.
+ 1 APPPATH/Views/sci_main_header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/sci_main_header.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sci_main_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('sci_main_header', [], true)
+ 5 APPPATH/Views/templates/dashboard.php(1): view('sci_main_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/dashboard.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/dashboard', [], true)
+ 9 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/dashboard', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 14:16:43 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH/Views/Filing/filing_breadcrumb.php on line 36.
+ 1 APPPATH/Views/Filing/filing_breadcrumb.php(36): in_array('1', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/filing_breadcrumb.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/filing_breadcrumb', [], true)
+ 5 APPPATH/Views/Filing/diary_update.php(87): view('Filing/filing_breadcrumb')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_update.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_update', [], true)
+ 9 APPPATH/Controllers/Filing/Diary_modify.php(121): view('Filing/diary_update', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 14:17:48 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH/Views/Filing/filing_breadcrumb.php on line 36.
+ 1 APPPATH/Views/Filing/filing_breadcrumb.php(36): in_array('1', 'ROOTPATH/public')
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/filing_breadcrumb.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/filing_breadcrumb', [], true)
+ 5 APPPATH/Views/Filing/diary_update.php(87): view('Filing/filing_breadcrumb')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_update.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_update', [], true)
+ 9 APPPATH/Controllers/Filing/Diary_modify.php(121): view('Filing/diary_update', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-20 14:46:36 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2020) AND &quot;h&quot;....
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT DISTINCT...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT DISTINCT...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#5 /var/www/html/app/Models/RI/RIModel.php(392): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/RI/ReceiptController.php(148): App\Models\RI\RIModel->getSearchDiary('c', '1', '123', '2020', '', '0')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->saveReceiptData()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-20 14:46:36 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2020) AND &quot;h&quot;....
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2020) AND &quot;h&quot;....
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2020) AND "h"."is_deleted" = \'f\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2020) AND "h"."is_deleted" = \'f\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2020) AND "h"."is_deleted" = \'f\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2020) AND "h"."is_deleted" = \'f\'', [], false)
+ 6 APPPATH/Models/RI/RIModel.php(392): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/RI/ReceiptController.php(148): App\Models\RI\RIModel->getSearchDiary('c', '1', '123', '2020', 'ROOTPATH/public', '0')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->saveReceiptData()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 04:48:23 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/EcopyController/envelope_movement_save', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 04:48:26 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/EcopyController/envelope_movement_save', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-20 15:42:32 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2022) AND &quot;h&quot;....
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT DISTINCT...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT DISTINCT...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT...', Array, false)
+#5 /var/www/html/app/Models/RI/RIModel.php(392): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/RI/ReceiptController.php(148): App\Models\RI\RIModel->getSearchDiary('c', '1', '123', '2022', '', '0')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->saveReceiptData()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-20 15:42:32 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2022) AND &quot;h&quot;....
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  syntax error at or near &quot;)&quot;
+LINE 6: ...            AND &quot;h&quot;.&quot;new_registration_year&quot; = 2022) AND &quot;h&quot;....
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2022) AND "h"."is_deleted" = \'f\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2022) AND "h"."is_deleted" = \'f\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2022) AND "h"."is_deleted" = \'f\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT DISTINCT *
+FROM "main_casetype_history" "h"
+WHERE SUBSTRING_INDEX(h.new_registration_number, \'-\', 1) = cast(1 as UNSIGNED) AND
+                                 CAST(123 AS UNSIGNED) BETWEEN (SUBSTRING_INDEX(SUBSTRING_INDEX(h.new_registration_number, \'-\', 2),\'-\',-1))
+                                 AND (SUBSTRING_INDEX(h.new_registration_number, \'-\', -1))
+                                 AND "h"."new_registration_year" = 2022) AND "h"."is_deleted" = \'f\'', [], false)
+ 6 APPPATH/Models/RI/RIModel.php(392): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/RI/ReceiptController.php(148): App\Models\RI\RIModel->getSearchDiary('c', '1', '123', '2022', 'ROOTPATH/public', '0')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->saveReceiptData()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 15:51:36 --> Call to undefined method CodeIgniter\Database\Postgre\Connection::affected_rows()
+in APPPATH/Models/RI/RIModel.php on line 1377.
+ 1 APPPATH/Controllers/RI/ReceiptController.php(922): App\Models\RI\RIModel->doReceiveForwardableDakForSection([...], '1', '1', 'ROOTPATH/public', null, '2394', null, '0')
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->doReceiveDakForSection()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:21:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/ReceiptController/doReceiveDakForSection', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:21:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/ReceiptController/doReceiveDakForSection', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:21:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/ReceiptController/doReceiveDakForSection', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:21:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/ReceiptController/doReceiveDakForSection', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 05:21:40 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('RI/ReceiptController/doReceiveDakForSection', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-20 23:30:31 --> Trying to access array offset on value of type null
+in APPPATH/Views/sci_main_header.php on line 36.
+ 1 APPPATH/Views/sci_main_header.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/sci_main_header.php', 36)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/sci_main_header.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('sci_main_header', [], true)
+ 5 APPPATH/Views/templates/dashboard.php(1): view('sci_main_header')
+ 6 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/templates/dashboard.php')
+ 7 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/dashboard', [], true)
+ 9 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/dashboard', [...])
+10 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+11 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+12 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

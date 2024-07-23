@@ -1,0 +1,107 @@
+CRITICAL - 2023-10-27 16:46:42 --> Undefined constant "Json_master_table"
+in APPPATH/Helpers/functions_helper.php on line 150.
+ 1 APPPATH/Controllers/Filing/Diary.php(86): get_from_table_json('state')
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:20:27 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827768 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:21:08 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827648 bytes)
+in SYSTEMPATH/Debug/Toolbar.php on line 478.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:27:42 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:27:57 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:03 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:06 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:11 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:13 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:16 --> Invalid file: Filing/get_lower_details.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Filing/get_lower_details.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/get_lower_details', [], true)
+ 3 APPPATH/Controllers/Filing/Limitation.php(31): view('Filing/get_lower_details', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:28:36 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 223827960 bytes)
+in SYSTEMPATH/Debug/Toolbar/Collectors/History.php on line 82.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-10-27 06:28:40 --> Invalid file: Filing/get_lower_details.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Filing/get_lower_details.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/get_lower_details', [], true)
+ 3 APPPATH/Controllers/Filing/Limitation.php(31): view('Filing/get_lower_details', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:29:13 --> Invalid file: Filing/get_lower_details.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Filing/get_lower_details.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/get_lower_details', [], true)
+ 3 APPPATH/Controllers/Filing/Limitation.php(31): view('Filing/get_lower_details', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:32:57 --> Invalid file: Filing/get_lower_details.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Filing/get_lower_details.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/get_lower_details', [], true)
+ 3 APPPATH/Controllers/Filing/Limitation.php(31): view('Filing/get_lower_details', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:39:03 --> Invalid file: Filing/get_lower_details.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Filing/get_lower_details.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/get_lower_details', [], true)
+ 3 APPPATH/Controllers/Filing/Limitation.php(31): view('Filing/get_lower_details', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 17:18:03 --> Class "App\Models\Filing\RefilingModel" not found
+in APPPATH/Controllers/Filing/Refiling.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(887): App\Controllers\Filing\Refiling->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(471): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:53:13 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/Filing/tagging_view.php on line 51.
+ 1 APPPATH/Views/Filing/tagging_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH/Views/Filing/tagging_view.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(18): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 06:53:20 --> foreach() argument must be of type array|object, null given
+in APPPATH/Views/Filing/tagging_view.php on line 51.
+ 1 APPPATH/Views/Filing/tagging_view.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'APPPATH/Views/Filing/tagging_view.php', 51)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(18): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

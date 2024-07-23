@@ -1,0 +1,824 @@
+CRITICAL - 2024-02-08 03:26:22 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 03:26:22 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 03:50:20 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 03:52:34 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 15:22:59 --> Undefined array key "filing_details"
+in APPPATH/Controllers/Filing/Tagging.php on line 22.
+ 1 APPPATH/Controllers/Filing/Tagging.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filing_details"', 'APPPATH/Controllers/Filing/Tagging.php', 22)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 15:25:12 --> Undefined array key "filing_details"
+in APPPATH/Controllers/Filing/Limitation.php on line 30.
+ 1 APPPATH/Controllers/Filing/Limitation.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filing_details"', 'APPPATH/Controllers/Filing/Limitation.php', 30)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Limitation->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Limitation))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 15:43:07 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 442.
+ 1 APPPATH/Views/Filing/diary_modify.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 442)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 15:44:04 --> Undefined variable $l1
+in APPPATH/Controllers/Filing/Refiling.php on line 441.
+ 1 APPPATH/Controllers/Filing/Refiling.php(441): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $l1', 'APPPATH/Controllers/Filing/Refiling.php', 441)
+ 2 APPPATH/Controllers/Filing/Refiling.php(159): App\Controllers\Filing\Refiling->get_defect_days1('14-01-2020', '2020-02-05', '2020-02-11', '12342020')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Refiling->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Refiling))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 04:16:08 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 15:46:40 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 442.
+ 1 APPPATH/Views/Filing/diary_modify.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 442)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 04:25:13 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 04:37:26 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('MasterManagement/Menu_assign/upd_umpermission', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 05:05:47 --> Trying to access array offset on value of type null
+in APPPATH/Views/header_sci.php on line 81.
+ 1 APPPATH/Views/header_sci.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/header_sci.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/header_sci.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('header_sci', [], true)
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/index', [], true)
+ 6 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 16:36:41 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 442.
+ 1 APPPATH/Views/Filing/diary_modify.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 442)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 16:38:51 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 442.
+ 1 APPPATH/Views/Filing/diary_modify.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 442)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 16:40:19 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 442.
+ 1 APPPATH/Views/Filing/diary_modify.php(442): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 442)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 05:10:19 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/get_party_name', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 16:41:01 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 106.
+ 1 APPPATH/Views/Filing/tagging_view.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 106)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 17:01:40 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = ''
+                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "st2"."i...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "st2"."i...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "st2"."i...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "st2"."i...', Array, false)
+#5 /var/www/html/app/Models/Common/Dropdown_list_model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Common/Ajaxcalls.php(89): App\Models\Common\Dropdown_list_model->get_districts_list('')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_districts()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 17:01:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = ''
+                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = \'\'
+                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = :st1.id_no:
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = :st2.display:
+AND "st1"."display" = :st1.display:
+AND "st2"."display" = :st2.display.1:
+ORDER BY "st2"."name" ASC', [...], false)
+ 6 APPPATH/Models/Common/Dropdown_list_model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Common/Ajaxcalls.php(89): App\Models\Common\Dropdown_list_model->get_districts_list('ROOTPATH/public')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_districts()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 17:02:07 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = ''
+                              ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "st2"."i...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "st2"."i...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "st2"."i...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "st2"."i...', Array, false)
+#5 /var/www/html/app/Models/Common/Dropdown_list_model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Common/Ajaxcalls.php(89): App\Models\Common\Dropdown_list_model->get_districts_list('')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_districts()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 17:02:07 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = ''
+                              ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 4: WHERE &quot;st1&quot;.&quot;id_no&quot; = \'\'
+                              ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = \'\'
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = \'Y\'
+AND "st1"."display" = \'Y\'
+AND "st2"."display" = \'Y\'
+ORDER BY "st2"."name" ASC')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "st2"."id_no", "st2"."name"
+FROM "master"."state" "st1"
+JOIN "master"."state" "st2" ON "st1"."state_code" = "st2"."state_code"
+WHERE "st1"."id_no" = :st1.id_no:
+AND "st2"."district_code" !=0
+AND "st2"."sub_dist_code" =0
+AND "st2"."village_code" =0
+AND "st2"."display" = :st2.display:
+AND "st1"."display" = :st1.display:
+AND "st2"."display" = :st2.display.1:
+ORDER BY "st2"."name" ASC', [...], false)
+ 6 APPPATH/Models/Common/Dropdown_list_model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Common/Ajaxcalls.php(89): App\Models\Common\Dropdown_list_model->get_districts_list('ROOTPATH/public')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_districts()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 17:16:30 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 60.
+ 1 APPPATH/Views/Filing/tagging_view.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 17:38:01 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 60.
+ 1 APPPATH/Views/Filing/tagging_view.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 17:43:25 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 60.
+ 1 APPPATH/Views/Filing/tagging_view.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 17:44:25 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 60.
+ 1 APPPATH/Views/Filing/tagging_view.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 60)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 18:11:26 --> Undefined array key "diary_no_rec_date"
+in APPPATH/Models/Filing/IADocumentModel.php on line 66.
+ 1 APPPATH/Models/Filing/IADocumentModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "diary_no_rec_date"', 'APPPATH/Models/Filing/IADocumentModel.php', 66)
+ 2 APPPATH/Controllers/Filing/Ia_documents.php(31): App\Models\Filing\IADocumentModel->get_hcinfo_m_e_new('62024')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Ia_documents->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Ia_documents))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 06:45:39 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 18:29:21 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ob...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ob...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ob...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ob...', Array, false)
+#5 /var/www/html/app/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/app/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 18:29:21 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES (\'\', \'NOW()...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:21\', \'2024-02-08 18:29:21\', \'1\', \'10.40.186.38\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:21\', \'2024-02-08 18:29:21\', \'1\', \'10.40.186.38\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:21\', \'2024-02-08 18:29:21\', \'1\', \'10.40.186.38\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (:org_id:, :save_dt:, :usercode:, :remark:, :mul_ent:, :diary_no:, :display:, :create_modify:, :updated_on:, :updated_by:, :updated_by_ip:)', [...], false)
+ 6 APPPATH/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 18:29:33 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ob...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ob...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ob...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ob...', Array, false)
+#5 /var/www/html/app/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/app/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 18:29:33 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES (\'\', \'NOW()...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:33\', \'2024-02-08 18:29:33\', \'1\', \'10.40.186.38\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:33\', \'2024-02-08 18:29:33\', \'1\', \'10.40.186.38\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:29:33\', \'2024-02-08 18:29:33\', \'1\', \'10.40.186.38\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (:org_id:, :save_dt:, :usercode:, :remark:, :mul_ent:, :diary_no:, :display:, :create_modify:, :updated_on:, :updated_by:, :updated_by_ip:)', [...], false)
+ 6 APPPATH/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 18:43:49 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ob...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ob...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ob...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ob...', Array, false)
+#5 /var/www/html/app/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/app/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 18:43:49 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES (\'\', \'NOW()...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:43:49\', \'2024-02-08 18:43:49\', \'1\', \'10.40.186.38\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:43:49\', \'2024-02-08 18:43:49\', \'1\', \'10.40.186.38\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:43:49\', \'2024-02-08 18:43:49\', \'1\', \'10.40.186.38\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (:org_id:, :save_dt:, :usercode:, :remark:, :mul_ent:, :diary_no:, :display:, :create_modify:, :updated_on:, :updated_by:, :updated_by_ip:)', [...], false)
+ 6 APPPATH/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 18:53:18 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "ob...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "ob...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "ob...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "ob...', Array, false)
+#5 /var/www/html/app/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert(Array)
+#6 /var/www/html/app/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 18:53:18 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES ('', 'NOW()...
+                                                             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 1: ...dated_on&quot;, &quot;updated_by&quot;, &quot;updated_by_ip&quot;) VALUES (\'\', \'NOW()...
+                                                             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:53:18\', \'2024-02-08 18:53:18\', \'1\', \'10.40.186.38\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:53:18\', \'2024-02-08 18:53:18\', \'1\', \'10.40.186.38\')')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (\'\', \'NOW()\', \'1\', \'\', \'\', \'62024\', \'Y\', \'2024-02-08 18:53:18\', \'2024-02-08 18:53:18\', \'1\', \'10.40.186.38\')')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO "obj_save" ("org_id", "save_dt", "usercode", "remark", "mul_ent", "diary_no", "display", "create_modify", "updated_on", "updated_by", "updated_by_ip") VALUES (:org_id:, :save_dt:, :usercode:, :remark:, :mul_ent:, :diary_no:, :display:, :create_modify:, :updated_on:, :updated_by:, :updated_by_ip:)', [...], false)
+ 6 APPPATH/Models/Filing/DefectModel.php(387): CodeIgniter\Database\BaseBuilder->insert([...])
+ 7 APPPATH/Controllers/Filing/Defect.php(310): App\Models\Filing\DefectModel->insert_function([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->insert_function()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-02-08 19:22:20 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", ...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", ...', Array, false)
+#5 /var/www/html/app/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', '', NULL, NULL)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-02-08 19:22:20 --> pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = ''
+                           ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type bigint: &quot;&quot;
+LINE 3: WHERE &quot;aor_code&quot; = \'\'
+                           ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = \'\'
+AND "isdead" != \'Y\'
+AND "if_aor" = \'Y\'')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "name", "mobile", "email"
+FROM "master"."bar"
+WHERE "aor_code" = :aor_code:
+AND "isdead" != \'Y\'
+AND "if_aor" = :if_aor:', [...], false)
+ 6 APPPATH/Models/Filing/AdvocateModel.php(113): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Advocate.php(524): App\Models\Filing\AdvocateModel->bar_detail('A', 'ROOTPATH/public', null, null)
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Advocate->bar_detail()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Advocate))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 07:52:20 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 07:52:21 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/advocate/bar_detail', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:28:06 --> Undefined array key "diary_no_rec_date"
+in APPPATH/Models/Filing/IADocumentModel.php on line 66.
+ 1 APPPATH/Models/Filing/IADocumentModel.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "diary_no_rec_date"', 'APPPATH/Models/Filing/IADocumentModel.php', 66)
+ 2 APPPATH/Controllers/Filing/Ia_documents.php(31): App\Models\Filing\IADocumentModel->get_hcinfo_m_e_new('62024')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Ia_documents->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Ia_documents))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:00:41 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_m_from_court_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:02:18 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_m_from_court_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:03:01 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_judges_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:03:11 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_judges_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 08:03:34 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_states_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:37:51 --> Undefined constant "App\Controllers\Filing\d_to_empid"
+in APPPATH/Controllers/Filing/Defect.php on line 260.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->index()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:39:27 --> Undefined constant "App\Controllers\Filing\d_to_empid"
+in APPPATH/Controllers/Filing/Defect.php on line 260.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Defect->index()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Defect))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:41:39 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 1071.
+ 1 APPPATH/Views/Filing/diary_modify.php(1071): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 1071)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:42:01 --> Trying to access array offset on value of type bool
+in APPPATH/Views/Filing/diary_modify.php on line 1071.
+ 1 APPPATH/Views/Filing/diary_modify.php(1071): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type bool', 'APPPATH/Views/Filing/diary_modify.php', 1071)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_modify.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_modify', [], true)
+ 5 APPPATH/Controllers/Filing/Diary_modify.php(114): view('Filing/diary_modify', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary_modify->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary_modify))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:48:28 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 106.
+ 1 APPPATH/Views/Filing/tagging_view.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 106)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 19:48:56 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 106.
+ 1 APPPATH/Views/Filing/tagging_view.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 106)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 20:00:25 --> foreach() argument must be of type array|object, int given
+in APPPATH/Views/Filing/tagging_view.php on line 106.
+ 1 APPPATH/Views/Filing/tagging_view.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH/Views/Filing/tagging_view.php', 106)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 5 APPPATH/Controllers/Filing/Tagging.php(63): view('Filing/tagging_view', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 22:22:01 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('MasterManagement/Menu_assign/upd_umpermission', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 22:25:38 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('MasterManagement/Menu_assign/upd_umpermission', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:00:19 --> Trying to access array offset on value of type null
+in APPPATH/Views/header_sci.php on line 81.
+ 1 APPPATH/Views/header_sci.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/header_sci.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/header_sci.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('header_sci', [], true)
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/404', [], true)
+ 6 APPPATH/Config/Routes.php(25): view('templates/404')
+ 7 SYSTEMPATH/CodeIgniter.php(946): CodeIgniter\CodeIgniter->Config\{closure}('Controller or its method is not found: \\App\\Controllers\\Cause_title::diary_search.php')
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:17:06 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('MasterManagement/Menu_assign/upd_umpermission', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:18:42 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:34:01 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Common/Ajaxcalls/get_judges_list', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:47:56 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:47:59 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:00 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:00 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:00 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:00 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Supreme_court/Content', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:01 --> Trying to access array offset on value of type null
+in APPPATH/Views/header_sci.php on line 81.
+ 1 APPPATH/Views/header_sci.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/header_sci.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/header_sci.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('header_sci', [], true)
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/404', [], true)
+ 6 APPPATH/Config/Routes.php(25): view('templates/404')
+ 7 SYSTEMPATH/CodeIgniter.php(946): CodeIgniter\CodeIgniter->Config\{closure}('Controller or its method is not found: \\App\\Controllers\\Da::set_dispose.php')
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:06 --> Trying to access array offset on value of type null
+in APPPATH/Views/header_sci.php on line 81.
+ 1 APPPATH/Views/header_sci.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/header_sci.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/header_sci.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('header_sci', [], true)
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/404', [], true)
+ 6 APPPATH/Config/Routes.php(25): view('templates/404')
+ 7 SYSTEMPATH/CodeIgniter.php(946): CodeIgniter\CodeIgniter->Config\{closure}('Controller or its method is not found: \\App\\Controllers\\Report::scrutiny_report.php')
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:48:36 --> Undefined array key "filing_details"
+in APPPATH/Controllers/Filing/Verification.php on line 23.
+ 1 APPPATH/Controllers/Filing/Verification.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filing_details"', 'APPPATH/Controllers/Filing/Verification.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Verification->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Verification))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:58:50 --> Undefined array key "filing_details"
+in APPPATH/Controllers/Filing/Verification.php on line 23.
+ 1 APPPATH/Controllers/Filing/Verification.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filing_details"', 'APPPATH/Controllers/Filing/Verification.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Verification->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Verification))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-02-08 23:59:33 --> Undefined array key "filing_details"
+in APPPATH/Controllers/Filing/Verification.php on line 23.
+ 1 APPPATH/Controllers/Filing/Verification.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "filing_details"', 'APPPATH/Controllers/Filing/Verification.php', 23)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Verification->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Verification))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,177 @@
+CRITICAL - 2023-10-16 09:00:53 --> Undefined property: App\Controllers\Filing\Diary::$efiling_webservices
+in APPPATH/Controllers/Filing/Diary.php on line 39.
+ 1 APPPATH/Controllers/Filing/Diary.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Filing\\Diary::$efiling_webservices', 'APPPATH/Controllers/Filing/Diary.php', 39)
+ 2 APPPATH/Controllers/Filing/Diary.php(34): App\Controllers\Filing\Diary->get_details_by_cnr('DLHC012033982012')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:27:41 --> Undefined variable $input_str
+in APPPATH/Libraries/webservices/Efiling_webservices.php on line 1271.
+ 1 APPPATH/Libraries/webservices/Efiling_webservices.php(1271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $input_str', 'APPPATH/Libraries/webservices/Efiling_webservices.php', 1271)
+ 2 APPPATH/Controllers/Filing/Diary.php(42): App\Libraries\webservices\Efiling_webservices->getOpenAPICNRSearch('DLHC012033982012')
+ 3 APPPATH/Controllers/Filing/Diary.php(37): App\Controllers\Filing\Diary->get_details_by_cnr('DLHC012033982012')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:32:57 --> Undefined variable $input_str
+in APPPATH/Libraries/webservices/Efiling_webservices.php on line 1271.
+ 1 APPPATH/Libraries/webservices/Efiling_webservices.php(1271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $input_str', 'APPPATH/Libraries/webservices/Efiling_webservices.php', 1271)
+ 2 APPPATH/Controllers/Filing/Diary.php(42): App\Libraries\webservices\Efiling_webservices->getOpenAPICNRSearch('DLHC012033982012')
+ 3 APPPATH/Controllers/Filing/Diary.php(37): App\Controllers\Filing\Diary->get_details_by_cnr('DLHC012033982012')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:48:57 --> Undefined variable $scchecked
+in APPPATH/Views/Filing/diary_generation.php on line 61.
+ 1 APPPATH/Views/Filing/diary_generation.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $scchecked', 'APPPATH/Views/Filing/diary_generation.php', 61)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_generation.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_generation', [], true)
+ 5 APPPATH/Controllers/Filing/Diary.php(29): view('Filing/diary_generation')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:50:23 --> Undefined array key 0
+in APPPATH/Views/Filing/diary_generation.php on line 56.
+ 1 APPPATH/Views/Filing/diary_generation.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH/Views/Filing/diary_generation.php', 56)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_generation.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_generation', [], true)
+ 5 APPPATH/Controllers/Filing/Diary.php(29): view('Filing/diary_generation')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:51:34 --> Undefined variable $ochecked
+in APPPATH/Views/Filing/diary_generation.php on line 75.
+ 1 APPPATH/Views/Filing/diary_generation.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ochecked', 'APPPATH/Views/Filing/diary_generation.php', 75)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_generation.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_generation', [], true)
+ 5 APPPATH/Controllers/Filing/Diary.php(29): view('Filing/diary_generation')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 09:52:23 --> Undefined variable $sachecked
+in APPPATH/Views/Filing/diary_generation.php on line 76.
+ 1 APPPATH/Views/Filing/diary_generation.php(76): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sachecked', 'APPPATH/Views/Filing/diary_generation.php', 76)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/diary_generation.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_generation', [], true)
+ 5 APPPATH/Controllers/Filing/Diary.php(29): view('Filing/diary_generation')
+ 6 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 7 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:22:17 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Common/Ajaxcalls.php', 44)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(44): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->search_case_details('DLND010057392022')
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:23:45 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 44.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Common/Ajaxcalls.php', 44)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(44): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->search_case_details('DLND010057392022')
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:24:47 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Common/Ajaxcalls.php', 45)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(45): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->search_case_details()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:24:50 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Common/Ajaxcalls.php', 45)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(45): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->search_case_details()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:24:52 --> json_decode(): Passing null to parameter #1 ($json) of type string is deprecated
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 45.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'json_decode(): Passing null to parameter #1 ($json) of type string is deprecated', 'APPPATH/Controllers/Common/Ajaxcalls.php', 45)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(45): json_decode(null, true)
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->search_case_details()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:52:58 --> Undefined variable $input_str
+in APPPATH/Libraries/webservices/Efiling_webservices.php on line 1271.
+ 1 APPPATH/Libraries/webservices/Efiling_webservices.php(1271): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $input_str', 'APPPATH/Libraries/webservices/Efiling_webservices.php', 1271)
+ 2 APPPATH/Controllers/Common/Ajaxcalls.php(44): App\Libraries\webservices\Efiling_webservices->getOpenAPICNRSearch('BRBU100043502022')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->dist('BRBU100043502022')
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:54:29 --> openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH/Libraries/webservices/Efiling_webservices.php on line 1270.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'APPPATH/Libraries/webservices/Efiling_webservices.php', 1270)
+ 2 APPPATH/Libraries/webservices/Efiling_webservices.php(1270): openssl_encrypt(Object(SensitiveParameterValue), 'AES-128-CBC', Object(SensitiveParameterValue), 1, 'abcdef987654')
+ 3 APPPATH/Controllers/Common/Ajaxcalls.php(44): App\Libraries\webservices\Efiling_webservices->getOpenAPICNRSearch('BRBU100043502022')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->dist('BRBU100043502022')
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 00:54:56 --> openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \0
+in APPPATH/Libraries/webservices/Efiling_webservices.php on line 1270.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'openssl_encrypt(): IV passed is only 12 bytes long, cipher expects an IV of precisely 16 bytes, padding with \\0', 'APPPATH/Libraries/webservices/Efiling_webservices.php', 1270)
+ 2 APPPATH/Libraries/webservices/Efiling_webservices.php(1270): openssl_encrypt(Object(SensitiveParameterValue), 'AES-128-CBC', Object(SensitiveParameterValue), 1, 'abcdef987654')
+ 3 APPPATH/Controllers/Common/Ajaxcalls.php(44): App\Libraries\webservices\Efiling_webservices->getOpenAPICNRSearch('BRBU100083922022')
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->dist('BRBU100083922022')
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 11:50:03 --> Attempt to read property "access_token" on null
+in APPPATH/Controllers/Filing/Diary.php on line 39.
+ 1 APPPATH/Controllers/Filing/Diary.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "access_token" on null', 'APPPATH/Controllers/Filing/Diary.php', 39)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->json()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 12:04:44 --> file_get_contents(/Json_master_table/m_tbl_high_courts.json): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Filing/Diary.php on line 32.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/Json_master_table/m_tbl_high_courts.json): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Filing/Diary.php', 32)
+ 2 APPPATH/Controllers/Filing/Diary.php(32): file_get_contents('/Json_master_table/m_tbl_high_courts.json')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->json()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 05:30:11 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Filing/Filing/Diary/petitionerAddress', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 23:54:26 --> Call to undefined function App\Controllers\Common\url_encryption()
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_high_court()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 23:55:37 --> Call to undefined function App\Controllers\Common\url_encryption()
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_high_court()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-16 23:55:40 --> Call to undefined function App\Controllers\Common\url_encryption()
+in APPPATH/Controllers/Common/Ajaxcalls.php on line 37.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Common\Ajaxcalls->get_high_court()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Common\Ajaxcalls))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

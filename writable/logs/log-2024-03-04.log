@@ -1,0 +1,650 @@
+ERROR - 2024-03-04 11:28:39 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark"...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark"...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark"...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark"...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-04 11:28:39 --> pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= \'\'
+                                 ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= :date(dc.ent_dt):
+AND date(dc.ent_dt) <= :date(dc.ent_dt).1:
+AND dc.usercode IN :dc.usercode:
+AND "dm"."display" = :dm.display:
+AND "dc"."display" = :dc.display:
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"', [...], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-04 11:36:09 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark"...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark"...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark"...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark"...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-04 11:36:09 --> pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= \'\'
+                                 ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= :date(dc.ent_dt):
+AND date(dc.ent_dt) <= :date(dc.ent_dt).1:
+AND dc.usercode IN :dc.usercode:
+AND "dm"."display" = :dm.display:
+AND "dc"."display" = :dc.display:
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"', [...], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-04 11:37:40 --> ErrorException: pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark"...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark"...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark"...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark"...', Array, false)
+#5 /var/www/html/app/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak(Array)
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-04 11:37:40 --> pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= ''
+                                 ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  invalid input syntax for type date: &quot;&quot;
+LINE 8: WHERE date(dc.ent_dt) &gt;= \'\'
+                                 ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= \'\'
+AND date(dc.ent_dt) <= \'\'
+AND dc.usercode IN (SELECT "usercode" FROM "master"."users" WHERE "empid" IN (2011,2130,4121,4518,4265,4295,4361,4371,4384,4389,4574,4592,4595,4621,4939,4940,4974,4975,4345,4984,2654,4659,5008,4566))
+AND "dm"."display" = \'Y\'
+AND "dc"."display" = \'Y\'
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "remark", DATE(dc.ent_dt) AS dak_date, CASE
+                  WHEN dc.diary_no IS NULL THEN \'Others\'
+                  ELSE CAST(dc.diary_no AS VARCHAR)
+              END AS section, "dc"."diary_no" AS "case_da", CONCAT(left((cast(dc.diary_no as text)), -4), \'/\', right((cast(dc.diary_no as text)), -4)) AS diary_no, "m"."reg_no_display" AS "case_no", CONCAT(m.pet_name, \' Vs \', m.res_name) AS causetitle, "dm"."docdesc", CONCAT(dc.docnum, \'/\', dc.docyear) AS document
+FROM "docdetails" "dc"
+LEFT JOIN "master"."docmaster" "dm" ON "dc"."doccode" = "dm"."doccode" AND "dc"."doccode1" = "dm"."doccode1"
+LEFT JOIN "main" "m" ON "dc"."diary_no" = "m"."diary_no"
+WHERE date(dc.ent_dt) >= :date(dc.ent_dt):
+AND date(dc.ent_dt) <= :date(dc.ent_dt).1:
+AND dc.usercode IN :dc.usercode:
+AND "dm"."display" = :dm.display:
+AND "dc"."display" = :dc.display:
+ORDER BY "dc"."diary_no", "dc"."docyear", "dc"."docnum"', [...], false)
+ 6 APPPATH/Models/Reports/Filing/ReportModel.php(620): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Reports/Filing/Report.php(326): App\Models\Reports\Filing\ReportModel->getDak([...])
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->dak_search()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:12:08 --> Undefined array key "total_fil"
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 2033.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(2033): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total_fil"', 'APPPATH/Models/Reports/Filing/ReportModel.php', 2033)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(879): App\Models\Reports\Filing\ReportModel->get_complete_filing_report('2023-03-04', '0')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:37:30 --> Call to undefined function main_supp()
+in APPPATH/Views/Extension/Causelist/fresh_matter_report.php on line 53.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Extension/Causelist/fresh_matter_report', [], true)
+ 4 APPPATH/Controllers/Extension/Causelist.php(32): view('Extension/Causelist/fresh_matter_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Extension\Causelist->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extension\Causelist))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:37:39 --> Call to undefined function main_supp()
+in APPPATH/Views/Extension/Causelist/fresh_matter_report.php on line 53.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Extension/Causelist/fresh_matter_report', [], true)
+ 4 APPPATH/Controllers/Extension/Causelist.php(32): view('Extension/Causelist/fresh_matter_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Extension\Causelist->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extension\Causelist))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:39:04 --> Call to undefined function main_supp()
+in APPPATH/Views/Extension/Causelist/fresh_matter_report.php on line 53.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Extension/Causelist/fresh_matter_report', [], true)
+ 4 APPPATH/Controllers/Extension/Causelist.php(32): view('Extension/Causelist/fresh_matter_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Extension\Causelist->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extension\Causelist))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:40:02 --> Call to undefined function main_supp()
+in APPPATH/Views/Extension/Causelist/fresh_matter_report.php on line 53.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Extension/Causelist/fresh_matter_report', [], true)
+ 4 APPPATH/Controllers/Extension/Causelist.php(32): view('Extension/Causelist/fresh_matter_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Extension\Causelist->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extension\Causelist))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 12:40:03 --> Call to undefined function main_supp()
+in APPPATH/Views/Extension/Causelist/fresh_matter_report.php on line 53.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Extension/Causelist/fresh_matter_report', [], true)
+ 4 APPPATH/Controllers/Extension/Causelist.php(32): view('Extension/Causelist/fresh_matter_report', [...])
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Extension\Causelist->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Extension\Causelist))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 01:38:18 --> Trying to access array offset on value of type null
+in APPPATH/Views/header_sci.php on line 81.
+ 1 APPPATH/Views/header_sci.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH/Views/header_sci.php', 81)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/header_sci.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('header_sci', [], true)
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('templates/index', [], true)
+ 6 APPPATH/Controllers/Supreme_court/DefaultController.php(24): view('templates/index', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Supreme_court\DefaultController->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Supreme_court\DefaultController))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 01:47:14 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Extension/Causelist/getFreshMatters', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 01:47:14 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Extension/Causelist/getFreshMatters', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 01:47:14 --> The action you requested is not allowed.
+in SYSTEMPATH/Security/Security.php on line 307.
+ 1 SYSTEMPATH/Security/Security.php(307): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH/Filters/CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH/Filters/Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\Filters\Filters->run('Extension/Causelist/getFreshMatters', 'before')
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 14:23:27 --> Undefined array key "total"
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 2064.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(2064): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH/Models/Reports/Filing/ReportModel.php', 2064)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(879): App\Models\Reports\Filing\ReportModel->get_complete_filing_report('2023-03-01', '0')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 14:28:11 --> Undefined array key "total"
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 2064.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(2064): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'APPPATH/Models/Reports/Filing/ReportModel.php', 2064)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(879): App\Models\Reports\Filing\ReportModel->get_complete_filing_report('2023-03-01', '0')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 14:29:16 --> Undefined variable $ddl_pip_caveat
+in APPPATH/Models/Reports/Filing/ReportModel.php on line 2068.
+ 1 APPPATH/Models/Reports/Filing/ReportModel.php(2068): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $ddl_pip_caveat', 'APPPATH/Models/Reports/Filing/ReportModel.php', 2068)
+ 2 APPPATH/Controllers/Reports/Filing/Report.php(879): App\Models\Reports\Filing\ReportModel->get_complete_filing_report('2023-03-01', '0')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_report()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-04 16:06:50 --> Cannot access offset of type string on string
+in APPPATH/Controllers/Filing/Tagging.php on line 325.
+ 1 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->conn_case_status()
+ 2 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-04 16:46:31 --> ErrorException: pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT\n        ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT\n        ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#4 /var/www/html/app/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...')
+#5 /var/www/html/app/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails(Array)
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-04 16:46:31 --> pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  \'86582023\'
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 5 APPPATH/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 6 APPPATH/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails([...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

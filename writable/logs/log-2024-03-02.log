@@ -1,0 +1,713 @@
+ERROR - 2024-03-02 10:24:15 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."dia...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."dia...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."dia...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."dia...', Array, false)
+#5 /var/www/html/app/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189952023')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-02 10:24:15 --> pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189952023\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189952023\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189952023\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = :diary_no:
+GROUP BY "a"."diary_no", "a"."notbef"', [...], false)
+ 6 APPPATH/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189952023')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 14:00:17 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."dia...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."dia...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."dia...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."dia...', Array, false)
+#5 /var/www/html/app/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189992019')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-02 14:00:17 --> pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = :diary_no:
+GROUP BY "a"."diary_no", "a"."notbef"', [...], false)
+ 6 APPPATH/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189992019')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 14:07:55 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."dia...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."dia...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."dia...')
+#4 /var/www/html/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."dia...', Array, false)
+#5 /var/www/html/app/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/app/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189992019')
+#7 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+#8 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+#9 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-03-02 14:07:55 --> pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  relation &quot;not_before&quot; does not exist
+LINE 2: FROM &quot;not_before&quot; &quot;a&quot;
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = \'189992019\'
+GROUP BY "a"."diary_no", "a"."notbef"')
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT "a"."diary_no", string_agg(b.jname, \', \') as jn, "a"."notbef"
+FROM "not_before" "a"
+JOIN "master"."judge" "b" ON "a"."j1"="b"."jcode"
+WHERE "diary_no" = :diary_no:
+GROUP BY "a"."diary_no", "a"."notbef"', [...], false)
+ 6 APPPATH/Controllers/Filing/Tagging.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 7 APPPATH/Controllers/Filing/Tagging.php(57): App\Controllers\Filing\Tagging->getListNotBefore('189992019')
+ 8 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 9 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+10 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 18:53:45 --> ErrorException: pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT\n        ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT\n        ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#4 /var/www/html/app/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...')
+#5 /var/www/html/app/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails(Array)
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 18:53:45 --> pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  \'86582023\'
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 5 APPPATH/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 6 APPPATH/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails([...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-02 18:54:10 --> ErrorException: pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT\n        ...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT\n        ...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT\n        ...')
+#4 /var/www/html/app/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT\n        ...')
+#5 /var/www/html/app/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails(Array)
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-02 18:54:10 --> pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  '86582023'
+             ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  schema &quot;main&quot; does not exist
+LINE 37:     main.diary_no  \'86582023\'
+             ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 5 APPPATH/Models/Filing/ReportModel.php(427): CodeIgniter\Database\BaseConnection->query('SELECT
+        main.diary_no,
+        CASE WHEN ack_id <> 0 THEN \'e-filed\' ELSE \'\' END AS isefiled,
+        CASE WHEN ack_id <> 0 THEN CONCAT(ack_id, \'/\', ack_rec_dt) ELSE \'\' END AS ref_id,
+        short_description,
+        CONCAT(pet_name, \' VS \', res_name) AS CauseTitle,
+        TO_CHAR(diary_no_rec_date, \'DD/MM/YYYY HH24:MI:SS\') AS Diarized_On,
+        CONCAT(u.name, \' [\', u.empid, \']\') AS Diarized_By,
+        TO_CHAR(lowerct.ent_dt, \'DD/MM/YYYY HH24:MI:SS\') AS lowercourt_entered_on,
+        CONCAT(lwu.name, \' [\', lwu.empid, \']\') AS lowercourt_entered_by,
+        TO_CHAR(MIN(save_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defect_raised_on,
+        CONCAT(os.name, \' [\', os.empid, \']\') AS Defects_notified_by,
+        TO_CHAR(MAX(rm_dt), \'DD/MM/YYYY HH24:MI:SS\') AS Defects_Removed_on,
+        CONCAT(rs.name, \' [\', rs.empid, \']\') AS defects_removed_by,
+        reg_no_display AS Registration_No,
+        TO_CHAR(fil_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Registered_on,
+        mhu.name AS Registered_By,
+        TO_CHAR(verification_date, \'DD/MM/YYYY HH24:MI:SS\') AS verified_on,
+        CONCAT(ud.name, \' [\', ud.empid, \']\') AS Verified_by,
+        TO_CHAR(next_dt, \'DD/MM/YYYY HH24:MI:SS\') AS Proposed_to_be_listed_on,
+        casetype.short_description
+    FROM
+        main
+    LEFT JOIN master.users u ON main.diary_user_id = u.usercode
+    LEFT JOIN defects_verification dv ON main.diary_no = dv.diary_no
+    LEFT JOIN lowerct ON main.diary_no = lowerct.diary_no AND lw_display = \'Y\'
+    LEFT JOIN heardt ON main.diary_no = heardt.diary_no
+    LEFT JOIN master.users lwu ON lowerct.usercode = lwu.usercode
+    LEFT JOIN obj_save ON main.diary_no = obj_save.diary_no AND obj_save.display = \'Y\'
+    LEFT JOIN master.users os ON obj_save.usercode = os.usercode
+    LEFT JOIN master.users rs ON obj_save.rm_user_id = rs.usercode
+    LEFT JOIN master.users ud ON dv.user_id = ud.usercode
+    LEFT JOIN master.casetype ON main.casetype_id = casetype.casecode
+    LEFT JOIN main_casetype_history mh ON main.diary_no = mh.diary_no AND mh.is_deleted = \'f\'
+    LEFT JOIN master.users mhu ON mh.adm_updated_by = mhu.usercode
+    WHERE
+    main.diary_no  \'86582023\'
+    GROUP BY
+        main.diary_no,
+        ack_id,
+        ack_rec_dt,
+        short_description,
+        u.name,
+        u.empid,
+        diary_no_rec_date,
+        mhu.name,
+        lowerct.ent_dt,
+        lwu.name,
+        lwu.empid,
+        save_dt,
+        os.name,
+        os.empid,
+        rm_dt,
+        rs.name,
+        rs.empid,
+        reg_no_display,
+        fil_dt,
+        verification_date,
+        ud.name,
+        ud.empid,
+        next_dt,
+        casetype.short_description
+    ORDER BY
+        diary_no_rec_date')
+ 6 APPPATH/Controllers/Filing/Report.php(235): App\Models\Filing\ReportModel->getCaseDetails([...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Report->case_trap()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

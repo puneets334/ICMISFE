@@ -1,0 +1,146 @@
+ERROR - 2024-03-05 12:56:11 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 /var/www/html/app/Models/Reports/Filing/ReportModel.php(2174): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 /var/www/html/app/Controllers/Reports/Filing/Report.php(902): App\Models\Reports\Filing\ReportModel->get_complete_filing_details('0', '1')
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-05 12:56:11 --> pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 5 APPPATH/Models/Reports/Filing/ReportModel.php(2174): CodeIgniter\Database\BaseConnection->query('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(902): App\Models\Reports\Filing\ReportModel->get_complete_filing_details('0', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 02:45:51 --> syntax error, unexpected token "else"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 903.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Reports/Filing/Report/get_complete_filing_details')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('Reports/Filing/Report/get_complete_filing_details')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Reports/Filing/Report/get_complete_filing_details')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 02:46:05 --> syntax error, unexpected token "else"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 903.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Reports/Filing/Report/get_complete_filing_details')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('Reports/Filing/Report/get_complete_filing_details')
+ 3 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Reports/Filing/Report/get_complete_filing_details')
+ 4 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-03-05 14:17:32 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^ in /var/www/html/system/Database/Postgre/Connection.php:140
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Que...', '/var/www/html/s...', 140)
+#1 /var/www/html/system/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT distinct...')
+#2 /var/www/html/system/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct...')
+#3 /var/www/html/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct...')
+#4 /var/www/html/app/Models/Reports/Filing/ReportModel.php(2175): CodeIgniter\Database\BaseConnection->query('SELECT distinct...')
+#5 /var/www/html/app/Controllers/Reports/Filing/Report.php(902): App\Models\Reports\Filing\ReportModel->get_complete_filing_details('0', '1')
+#6 /var/www/html/system/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+#7 /var/www/html/system/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+#8 /var/www/html/system/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-03-05 14:17:32 --> pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^
+in SYSTEMPATH/Database/Postgre/Connection.php on line 140.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'pg_query(): Query failed: ERROR:  column &quot;a.diary_no&quot; must appear in the GROUP BY clause or be used in an aggregate function
+LINE 1: SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_descrip...
+                        ^', 'SYSTEMPATH/Database/Postgre/Connection.php', 140)
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(140): pg_query(Object(PgSql\Connection), 'SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 3 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\Postgre\Connection->execute('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 4 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 5 APPPATH/Models/Reports/Filing/ReportModel.php(2175): CodeIgniter\Database\BaseConnection->query('SELECT distinct a.diary_no, m.fil_no, m.fil_dt,short_description,active_reg_year ,CASE WHEN string_agg(DISTINCT pet_res, \'\') iLIKE \'%P%\' THEN \'Petitioner In Person\' ELSE \'\'  END AS caveat_no ,string_agg(DISTINCT CONCAT(SUBSTRING(caveat_no::varchar, 1, CHAR_LENGTH(caveat_no::varchar) - 4), \'-\', right(caveat_no::varchar, 4)),\' ,\') AS caveat_no1
+                    FROM obj_save a
+                    LEFT JOIN heardt b ON a.diary_no = b.diary_no
+                    LEFT JOIN main m ON a.diary_no = m.diary_no 
+                    LEFT JOIN master.casetype c ON casetype_id=casecode  left join advocate adv on adv.diary_no=a.diary_no and advocate_id=\'584\' and adv.display=\'Y\'  left join caveat_diary_matching adv1 on adv1.diary_no=a.diary_no  and adv1.display=\'Y\'
+                    WHERE a.display = \'Y\' AND ((b.diary_no IS NULL) OR (b.next_dt is null AND listorder =0 AND subhead =0 AND mainhead = \'M\') OR (b.next_dt is null AND mainhead IS NULL)) AND c_status = \'P\' ')
+ 6 APPPATH/Controllers/Reports/Filing/Report.php(902): App\Models\Reports\Filing\ReportModel->get_complete_filing_details('0', '1')
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 14:33:16 --> Undefined array key "verification_date"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 909.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(909): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "verification_date"', 'APPPATH/Controllers/Reports/Filing/Report.php', 909)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 14:33:21 --> Undefined array key "verification_date"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 909.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(909): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "verification_date"', 'APPPATH/Controllers/Reports/Filing/Report.php', 909)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 14:50:19 --> Undefined array key "verification_date"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 909.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(909): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "verification_date"', 'APPPATH/Controllers/Reports/Filing/Report.php', 909)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-05 14:53:45 --> Undefined array key "caveat_no"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 910.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(910): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "caveat_no"', 'APPPATH/Controllers/Reports/Filing/Report.php', 910)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_complete_filing_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

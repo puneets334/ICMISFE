@@ -1,0 +1,44 @@
+CRITICAL - 2023-10-14 01:33:06 --> Class "App\Controllers\Filing\BaseController" not found
+in APPPATH/Controllers/Filing/Diary.php on line 5.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('Filing/Diary')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('Filing/Diary')
+ 4 SYSTEMPATH/CodeIgniter.php(800): CodeIgniter\Router\Router->handle('Filing/Diary')
+ 5 SYSTEMPATH/CodeIgniter.php(428): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:06:18 --> Invalid file: layout.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout.php')
+ 2 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->render('layout', [], true)
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/diary_generation', [], true)
+ 4 APPPATH/Controllers/Filing/Diary.php(21): view('Filing/diary_generation')
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 01:41:04 --> Undefined constant "Username"
+in APPPATH/Views/login.php on line 14.
+ 1 SYSTEMPATH/View/View.php(213): include()
+ 2 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('login', [], true)
+ 4 APPPATH/Controllers/Login.php(25): view('login')
+ 5 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Login->index()
+ 6 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:35:38 --> Undefined variable $high_court_list
+in APPPATH/Controllers/Filing/Diary.php on line 24.
+ 1 APPPATH/Controllers/Filing/Diary.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $high_court_list', 'APPPATH/Controllers/Filing/Diary.php', 24)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-14 12:39:22 --> file_get_contents(/Json_master_table): Failed to open stream: No such file or directory
+in APPPATH/Controllers/Filing/Diary.php on line 20.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/Json_master_table): Failed to open stream: No such file or directory', 'APPPATH/Controllers/Filing/Diary.php', 20)
+ 2 APPPATH/Controllers/Filing/Diary.php(20): file_get_contents('/Json_master_table')
+ 3 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Diary->index()
+ 4 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Diary))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

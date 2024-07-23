@@ -1,0 +1,12 @@
+CRITICAL - 2024-03-19 11:39:01 --> strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated
+in APPPATH/Views/RI/Receipt/receiptReport.php on line 192.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated', 'APPPATH/Views/RI/Receipt/receiptReport.php', 192)
+ 2 APPPATH/Views/RI/Receipt/receiptReport.php(192): strtotime(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/RI/Receipt/receiptReport.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('RI/Receipt/receiptReport', [], true)
+ 6 APPPATH/Controllers/RI/ReceiptController.php(382): view('RI/Receipt/receiptReport', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\RI\ReceiptController->dateWiseReceived()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RI\ReceiptController))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

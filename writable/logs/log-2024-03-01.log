@@ -1,0 +1,78 @@
+CRITICAL - 2024-03-01 11:35:53 --> You must set the database table to be used with your query.
+in SYSTEMPATH/Database/BaseConnection.php on line 845.
+ 1 SYSTEMPATH/Model.php(611): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH/Model.php(797): CodeIgniter\Model->builder()
+ 3 APPPATH/Controllers/Reports/Filing/Report.php(998): CodeIgniter\Model->__call('rcc_section_detail_report', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_rcc_case_details()
+ 5 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 12:29:30 --> Undefined array key "DA_name"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 1026.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(1026): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "DA_name"', 'APPPATH/Controllers/Reports/Filing/Report.php', 1026)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_rcc_case_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 12:30:02 --> Undefined array key "DA_name"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 1026.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(1026): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "DA_name"', 'APPPATH/Controllers/Reports/Filing/Report.php', 1026)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_rcc_case_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 12:30:30 --> Undefined array key "DA_name"
+in APPPATH/Controllers/Reports/Filing/Report.php on line 1025.
+ 1 APPPATH/Controllers/Reports/Filing/Report.php(1025): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "DA_name"', 'APPPATH/Controllers/Reports/Filing/Report.php', 1025)
+ 2 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Reports\Filing\Report->get_rcc_case_details()
+ 3 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reports\Filing\Report))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 17:04:05 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Views/Filing/tagging_view.php on line 319.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Views/Filing/tagging_view.php', 319)
+ 2 APPPATH/Views/Filing/tagging_view.php(319): trim(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 6 APPPATH/Controllers/Filing/Tagging.php(131): view('Filing/tagging_view', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 17:06:16 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Views/Filing/tagging_view.php on line 319.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Views/Filing/tagging_view.php', 319)
+ 2 APPPATH/Views/Filing/tagging_view.php(319): trim(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 6 APPPATH/Controllers/Filing/Tagging.php(131): view('Filing/tagging_view', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 17:06:21 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Views/Filing/tagging_view.php on line 319.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Views/Filing/tagging_view.php', 319)
+ 2 APPPATH/Views/Filing/tagging_view.php(319): trim(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 6 APPPATH/Controllers/Filing/Tagging.php(131): view('Filing/tagging_view', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-03-01 17:06:25 --> trim(): Passing null to parameter #1 ($string) of type string is deprecated
+in APPPATH/Views/Filing/tagging_view.php on line 319.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8192, 'trim(): Passing null to parameter #1 ($string) of type string is deprecated', 'APPPATH/Views/Filing/tagging_view.php', 319)
+ 2 APPPATH/Views/Filing/tagging_view.php(319): trim(null)
+ 3 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/Filing/tagging_view.php')
+ 4 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('Filing/tagging_view', [], true)
+ 6 APPPATH/Controllers/Filing/Tagging.php(131): view('Filing/tagging_view', [...])
+ 7 SYSTEMPATH/CodeIgniter.php(925): App\Controllers\Filing\Tagging->index()
+ 8 SYSTEMPATH/CodeIgniter.php(480): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Filing\Tagging))
+ 9 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
