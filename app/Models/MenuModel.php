@@ -17,20 +17,45 @@ class MenuModel extends Model
     }
     public function get_Main_menus($q_usercode)
     {
+        $queryStr = "SELECT DISTINCT 
+                    m.menu_nm, 
+                    SUBSTRING(m.menu_id, 1, 2) AS menu_id, 
+                    m.url AS url, 
+                    m.icon, 
+                    m.old_smenu_id 
+                 FROM 
+                    master.user_role_master_mapping urmm 
+                    INNER JOIN master.role_master rm ON urmm.role_master_id = rm.id
+                    INNER JOIN master.role_menu_mapping rmm ON rm.id = rmm.role_master_id 
+                    INNER JOIN master.menu m ON m.menu_id LIKE CONCAT(SUBSTRING(rmm.menu_id, 1, 2), '%') 
+                 WHERE 
+                    SUBSTRING(m.menu_id, 3) = '0000000000' 
+                    AND m.menu_id IS NOT NULL 
+                    AND urmm.display = 'Y' 
+                    AND rm.display = 'Y' 
+                    AND rmm.display = 'Y' 
+                    AND m.display = 'Y' 
+                    AND urmm.usercode = $q_usercode
+                 ORDER BY 
+                    m.menu_nm";
 
-        $query = "select distinct m.menu_nm,substr(m.menu_id,1,2) as menu_id,m.url as url, m.icon, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
-inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m on m.menu_id like 
- CONCAT(substr(rmm.menu_id,1,2), '%') 
-where substr(m.menu_id,3)='0000000000' and m.menu_id is not null and urmm.display='Y' and rm.display='Y' and rmm.display='Y' and m.display='Y' 
-and urmm.usercode=$q_usercode  order by m.menu_nm";
-        $query = $this->db->query($query);
+        $query = $this->db->query($queryStr);
+
+        // Check for SQL errors
+        if ($query === false) {
+            // Log or display the error
+            $error = $this->db->error();
+            echo "SQL Error: " . $error['message'];
+            return false;
+        }
+
         if ($query->getNumRows() >= 1) {
-            $result = $query->getResultArray();
-            return $result;
+            return $query->getResultArray();
         } else {
             return 0;
         }
     }
+
     public function get_sub_menus($q_usercode, $menu_id)
     {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,4) as sml1_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
