@@ -33,6 +33,9 @@
 				$q_usercode = session()->get('login')['usercode'];
 				//echo $menu_id; exit();
 				$uri = current_url(true);
+				$result=$MenuModel->get_Main_menus($q_usercode);
+				// print_r($result);
+				$menu_id = $result[0]['menu_id'];
 				?>
 
 
@@ -41,10 +44,9 @@
 
 				$icon_string = 'fas fa-fill';
 				$uri = current_url(true);
-				echo 'Ashu';
 			
 				if (!empty($menu_id) && $menu_id != null) {
-					echo '46';
+					// echo '46';
 					
 					/*foreach ($result as $Main_menus){
                         $menu_id=$Main_menus['menu_id'];
