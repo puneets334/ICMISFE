@@ -1,7 +1,11 @@
 <?php
+
 namespace App\Models;
+
 use CodeIgniter\Model;
-class MenuModel extends Model{
+
+class MenuModel extends Model
+{
     //protected $table = 'master.users';
     protected $db;
 
@@ -11,32 +15,39 @@ class MenuModel extends Model{
         //$this->db = db_connect();
         $this->db = \Config\Database::connect();
     }
-    public function get_Main_menus($q_usercode) {
-        //if want all manu find and removed AND cast(substr(m.menu_id,1,2) as integer) =01
+    public function get_Main_menus($q_usercode)
+    {
+
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,2) as menu_id,m.url as url, m.icon, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
 inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m on m.menu_id like 
  CONCAT(substr(rmm.menu_id,1,2), '%') 
 where substr(m.menu_id,3)='0000000000' and m.menu_id is not null and urmm.display='Y' and rm.display='Y' and rmm.display='Y' and m.display='Y' 
 and urmm.usercode=$q_usercode  order by m.menu_nm";
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
-    public function get_sub_menus($q_usercode,$menu_id) {
+    public function get_sub_menus($q_usercode, $menu_id)
+    {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,4) as sml1_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
                     inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m on 
                     m.menu_id like CONCAT(substr(rmm.menu_id,1,4), '%') 
                     where substr(m.menu_id,5)='00000000' AND cast(substr(m.menu_id,1,2) as integer) =$menu_id AND substr(m.menu_id,3,2) <>'00' and m.menu_id is not null and urmm.display='Y' and rm.display='Y' and rmm.display='Y' and m.display='Y' 
                     and urmm.usercode=$q_usercode  order by m.menu_nm";
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
-    public function get_sub_menus_two($q_usercode,$smlv1_id) {
+    public function get_sub_menus_two($q_usercode, $smlv1_id)
+    {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,6) as sml2_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
                     inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m on m.menu_id 
                     like CONCAT(substr(rmm.menu_id,1,6), '%')
@@ -45,24 +56,30 @@ and urmm.usercode=$q_usercode  order by m.menu_nm";
                     and urmm.usercode=$q_usercode  order by m.menu_nm";
 
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
-            $result = $query->getResultArray(); 
+        if ($query->getNumRows() >= 1) {
+            $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
-    public function get_sub_menus_three($q_usercode,$smlv3_id) {
+    public function get_sub_menus_three($q_usercode, $smlv3_id)
+    {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,8) as sml3_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
                             inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m on m.menu_id 
                             like CONCAT(substr(rmm.menu_id,1,8), '%')            
                             where substr(m.menu_id,9)='0000' AND cast(substr(m.menu_id,1,6) as integer)=$smlv3_id AND substr(m.menu_id,7,2) <>'00' AND m.menu_id is not null and urmm.display='Y' and rm.display='Y' and rmm.display='Y' and m.display='Y' and urmm.usercode=$q_usercode order by m.menu_nm";
 
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
-    public function get_sub_menus_four($q_usercode,$smlv4_id) {
+    public function get_sub_menus_four($q_usercode, $smlv4_id)
+    {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,10) as sml4_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
                             inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m 
                             on m.menu_id like CONCAT(substr(rmm.menu_id,1,10), '%') 
@@ -71,12 +88,15 @@ and urmm.usercode=$q_usercode  order by m.menu_nm";
                             and m.display='Y' and urmm.usercode=$q_usercode order by m.menu_nm";
 
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
-    public function get_sub_menus_five($q_usercode,$smlv5_id) {
+    public function get_sub_menus_five($q_usercode, $smlv5_id)
+    {
         $query = "select distinct m.menu_nm,substr(m.menu_id,1,12) as sml5_id,m.url, m.old_smenu_id from master.user_role_master_mapping urmm inner join master.role_master rm on urmm.role_master_id=rm.id
                                             inner join master.role_menu_mapping rmm on rm.id=rmm.role_master_id inner join master.menu m 
                                             on m.menu_id like CONCAT(substr(rmm.menu_id,1,12), '%') 
@@ -85,14 +105,17 @@ and urmm.usercode=$q_usercode  order by m.menu_nm";
                                             order by m.menu_nm";
 
         $query = $this->db->query($query);
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return 0;}
+        } else {
+            return 0;
+        }
     }
 
 
-    public function get_action_permission_allotment() {
+    public function get_action_permission_allotment()
+    {
         $query = $this->db->table('master.users a')
             ->select('a.usercode, a.name, a.display, a.empid, b.type_name, c.section_name, a.attend')
             ->join('master.usertype b', 'a.usertype = b.id', 'left')
@@ -100,12 +123,15 @@ and urmm.usercode=$q_usercode  order by m.menu_nm";
             ->where('a.display', 'Y')
             ->orderBy('a.usercode')
             ->get();
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return false ;}
+        } else {
+            return false;
+        }
     }
-    public function get_menu_list() {
+    public function get_menu_list()
+    {
         $query = $this->db->table('master.menu')
             ->select('*')
             ->where('menu_id is not null')
@@ -118,31 +144,38 @@ and urmm.usercode=$q_usercode  order by m.menu_nm";
             ->orderBy('substr(menu_id,11,2)')
             ->orderBy('priority')
             ->get();
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return false ;}
+        } else {
+            return false;
+        }
     }
-    public function get_role_master_with_role_menu_mapping_list() {
+    public function get_role_master_with_role_menu_mapping_list()
+    {
         $query = $this->db->table('master.role_master a, master.role_menu_mapping b, master.menu c')
             ->select('a.role_desc,c.menu_nm,c.url,c.old_smenu_id,c.menu_id,c.display')
             ->where("a.id=b.role_master_id AND (b.menu_id=substr(c.menu_id,1,2) OR b.menu_id=substr(c.menu_id,1,4) OR b.menu_id=substr(c.menu_id,1,6) OR b.menu_id=substr(c.menu_id,1,8)) AND c.display='Y'")
-            ->orderBy('a.role_desc','c.menu_id')
+            ->orderBy('a.role_desc', 'c.menu_id')
             ->get();
-        if($query->getNumRows() >= 1) {
+        if ($query->getNumRows() >= 1) {
             $result = $query->getResultArray();
             return $result;
-        }else{return false ;}
+        } else {
+            return false;
+        }
     }
-    public function get_menu_by_id($menu_id) {
+    public function get_menu_by_id($menu_id)
+    {
         $builder = $this->db->table("master.menu");
         $builder->select("*");
-        $builder->WHERE('id',$menu_id);
-        $query =$builder->get(1);
-        if($query->getNumRows() >= 1) {
+        $builder->WHERE('id', $menu_id);
+        $query = $builder->get(1);
+        if ($query->getNumRows() >= 1) {
             $result = $query->getRow();
             return $result;
-        }else{return false;}
-
+        } else {
+            return false;
+        }
     }
 }
