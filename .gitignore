@@ -19,3 +19,4 @@ application/logs/*
 app/Config/App.php
 writable/*
 writable/debugbar/*
+app/Config/App.php
