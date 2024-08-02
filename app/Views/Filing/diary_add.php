@@ -117,16 +117,18 @@ if (!empty($state_list)) {
                                                     <div class="form-group row">
                                                         <label  class="col-sm-5 col-form-label">Court Type<span class="text-red">*</span> :</label>
                                                         <div class="col-sm-7">
-                                                            <select name="ddl_court" id="ddl_court" class="form-control">
-                                                                <option value="">Select State</option>
-                                                                <?php
-                                                                foreach ($court_type_list as $row) {
-                                                                    if (!empty($row['id']) && $row['id']==1) {  $sel_c = 'selected=selected';  }else{$sel_c='';}
-                                                                    echo'<option '.$sel_c.' value="'.$row['id'].'">'.$row['court_name'].'</option>';
+                                                        <select name="ddl_court" id="ddl_court" class="form-control">
+                                                            <option value="">Select Court Type</option>
+                                                            <?php if (!empty($court_type_list) && is_array($court_type_list)) : ?>
+                                                                <?php foreach ($court_type_list as $row) : ?>
+                                                                    <?php $sel_c = (!empty($row['id']) && $row['id'] == 1) ? 'selected="selected"' : ''; ?>
+                                                                    <option <?php echo $sel_c; ?> value="<?php echo $row['id']; ?>"><?php echo $row['court_name']; ?></option>
+                                                                <?php endforeach; ?>
+                                                            <?php else : ?>
+                                                                <option value="">No court types available</option>
+                                                            <?php endif; ?>
+                                                        </select>
 
-                                                                }
-                                                                ?>
-                                                            </select>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -487,10 +489,15 @@ if (!empty($state_list)) {
                                                             <div class="col-sm-7">
                                                                 <select  id="selpsti" name="selpsti" onchange="getDistrict('P',this.id,this.value)" class="form-control select2Stop custom-select rounded-0" style="width: 100%;">
                                                                     <option value="">Select State</option>
-                                                                    <?php
-                                                                        foreach ($state_list as $dataRes) { ?>
-                                                                            <option value="<?= sanitize(trim($dataRes['cmis_state_id'])); ?>"><?=sanitize(strtoupper($dataRes['agency_state'])); ?> </option>
-                                                                    <?php }  ?>
+                                                                        <?php if (!empty($state_list) && is_array($state_list)) : ?>
+                                                                            <?php foreach ($state_list as $dataRes) : ?>
+                                                                                <option value="<?= htmlspecialchars(trim($dataRes['cmis_state_id']), ENT_QUOTES, 'UTF-8'); ?>">
+                                                                                    <?= htmlspecialchars(strtoupper($dataRes['agency_state']), ENT_QUOTES, 'UTF-8'); ?>
+                                                                                </option>
+                                                                            <?php endforeach; ?>
+                                                                        <?php else : ?>
+                                                                            <option value="0">No states available</option>
+                                                                        <?php endif; ?>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -1585,39 +1592,35 @@ if (!empty($state_list)) {
 
         }
         $(document).ready(function () {
-            //----------Get High Court Bench List----------------------//
+    //----------Get High Court Bench List----------------------//
             $('#ddl_st_agncyStop').change(function () {
-
-                var CSRF_TOKEN = 'CSRF_TOKEN';
                 var CSRF_TOKEN_VALUE = $('[name="CSRF_TOKEN"]').val();
                 $('#case_type_id').val('');
 
                 var high_court_id = $(this).val();
-                //var court_type = $("input[name=ddl_court]:checked").val();
-                //var court_type = $("input[name=ddl_court]:selected").val();
-                var court_type =$('#ddl_court :selected').val();
-                //var court_type = $("input[name=ddl_court]").val();
-                // alert('CSRF_TOKEN_VALUE=' +CSRF_TOKEN_VALUE);
-                alert('high_court_id=' +high_court_id + 'court_type=='+court_type);
+                var court_type = $('#ddl_court :selected').val();
+
+                // Debugging information
+                console.log('CSRF_TOKEN_VALUE=' + CSRF_TOKEN_VALUE);
+                console.log('high_court_id=' + high_court_id);
+                console.log('court_type=' + court_type);
+
                 $.ajax({
                     type: "POST",
                     data: {CSRF_TOKEN: CSRF_TOKEN_VALUE, high_court_id: high_court_id, court_type: court_type},
                     url: "<?php echo base_url('Common/Ajaxcalls/get_hc_bench_list'); ?>",
-                    success: function (data)
-                    {
+                    success: function (data) {
                         $('#ddl_bench').html(data);
-                        /*if(hc_bench_value && court_type == 1){
-                            $('#ddl_bench').val(hc_bench_value).select2().trigger("change");
-                        }*/
-                        updateCSRFToken();
+                        updateCSRFToken(); // Ensure this function is defined
                     },
-                    error: function () {
-                        updateCSRFToken();
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.error('AJAX Error:', textStatus, errorThrown);
+                        updateCSRFToken(); // Ensure this function is defined
                     }
                 });
-
             });
         });
+
     </script>
 
 

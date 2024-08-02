@@ -12,7 +12,7 @@ class DropdownListModel extends Model
     public function __construct()
     {
         parent::__construct();
-        $this->db = db_connect();
+        $this->db = \Config\Database::connect();
     }
 
     public function get_diary_details_by_diary_no($diary_no)
@@ -124,13 +124,13 @@ class DropdownListModel extends Model
             return $this->get_district_court_bench($cmis_state_id, $court_type);
         }
 
-        $this->db->select('*')->from('master.ref_agency_code');
-
+        $builder = $this->db->table('master.ref_agency_code');
         if (!empty($cmis_state_id)) {
-            $this->db->where('cmis_state_id', $cmis_state_id);
+            $builder->where('cmis_state_id', $cmis_state_id);
         }
-        $query = $this->db->get();
-        return $query->result_array();
+
+        $query = $builder->get();
+        return $query->getResultArray();
     }
 
 
@@ -241,7 +241,7 @@ class DropdownListModel extends Model
     }
 
 
-    function get_usersection($id = null)
+    public function get_usersection($id = null)
     {
         $table_name = 'master.usersection';
         $file = env('Json_master_table') . $table_name . '.json';
@@ -250,14 +250,19 @@ class DropdownListModel extends Model
             $json_data = json_decode($json, true);
 
             if ($json_data) {
+                // Filter the data directly here
                 $json_array = array_filter($json_data, function ($item) use ($id) {
-                    return $this->filter_usersection($item, $id);
+                    if ($id !== null) {
+                        return $item['id'] == $id;
+                    }
+                    return true;
                 });
                 return $json_array;
             }
         }
-        return false;
+        return [];
     }
+
 
     function filter_usersection($item, $id)
     {
@@ -323,23 +328,26 @@ class DropdownListModel extends Model
 
     public function get_address_state_list()
     {
-        $this->db->select('id_no as cmis_state_id, name as agency_state, state_code', false);
-        $this->db->from('master.state');
-        $this->db->where('district_code', 0);
-        $this->db->where('sub_dist_code', 0);
-        $this->db->where('village_code', 0);
-        $this->db->where('display', 'Y');
-        $this->db->where('sci_state_id !=', 0);
-        $this->db->order_by('name', 'ASC');
+        $builder = $this->db->table('master.state');
 
-        $query = $this->db->get();
+        $builder->select('id_no as cmis_state_id, name as agency_state, state_code');
+        $builder->where('district_code', 0);
+        $builder->where('sub_dist_code', 0);
+        $builder->where('village_code', 0);
+        $builder->where('display', 'Y');
+        $builder->where('sci_state_id !=', 0);
+        $builder->orderBy('name', 'ASC');
 
-        if ($query->num_rows() >= 1) {
-            return $query->result_array();
+        $query = $builder->get();
+
+        if ($query->getNumRows() >= 1) {
+            return $query->getResultArray();
         } else {
-            return false;
+            return [];
         }
     }
+
+
 
     public function get_districts_list($state_id)
     {
@@ -419,19 +427,23 @@ class DropdownListModel extends Model
     public function get_court_type_list($id = null)
     {
         $builder = $this->db->table("master.m_from_court");
-        $builder->select("id,court_name");
-        $builder->WHERE('display', 'Y');
+        $builder->select("id, court_name");
+        $builder->where('display', 'Y');
+
         if (!empty($id) && $id != null) {
-            $builder->WHERE('id', $id);
+            $builder->where('id', $id);
         }
+
         $builder->orderBy('order_by');
         $query = $builder->get();
+
         if ($query->getNumRows() >= 1) {
             return $query->getResultArray();
         } else {
-            return false;
+            return [];
         }
     }
+
 
     function get_adv_name($p_r_advt, $advno, $advyr = null, $state_id = null)
     {
@@ -509,8 +521,7 @@ class DropdownListModel extends Model
     function get_case_type_court($state_id, $court_type)
     {
         $corType = "";
-        if ($court_type == 4) 
-        {
+        if ($court_type == 4) {
             $table_name = 'master.casetype';
         } else {
             if ($court_type == 1) {
@@ -563,7 +574,7 @@ class DropdownListModel extends Model
 
     function get_all_judges($state_id, $court_type)
     {
-        if ($court_type == 4) { 
+        if ($court_type == 4) {
             $table_name = 'master.judge';
         } else {
             $table_name = 'master.org_lower_court_judges';
