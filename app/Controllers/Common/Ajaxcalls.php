@@ -32,27 +32,25 @@ class Ajaxcalls extends BaseController
         }
         echo $dropDownOptions;
     }
-    function get_hc_bench_list()
+    public function get_hc_bench_list()
     {
-        $high_court_id = (sanitize($_POST['high_court_id']));
-        $court_type = $_POST['court_type'];
+        $high_court_id = $this->request->getPost('high_court_id');
+        $court_type = $this->request->getPost('court_type');
         $selected_bench = "";
         $dropDownOptions = '<option value="">Select High Court Bench</option>';
+
         if (!empty($high_court_id) && !empty($court_type)) {
             $hc_benches = $this->DropdownListModel->get_ref_agency_code($high_court_id, $court_type);
+
             foreach ($hc_benches as $bench) {
-                if (!empty($_POST['bench_id'])) {
-                    if ($_POST['bench_id'] == $bench['id']) {
-                        $selected_bench = "selected";
-                    } else {
-                        $selected_bench = "";
-                    }
-                }
-                $dropDownOptions .= '<option value="' . sanitize($bench['id']) . '" ' . $selected_bench . '>' . sanitize(strtoupper($bench['agency_name'])) . '</option>';
+                $selected_bench = ($this->request->getPost('bench_id') == $bench['id']) ? "selected" : "";
+                $dropDownOptions .= '<option value="' . esc($bench['id']) . '" ' . $selected_bench . '>' . esc(strtoupper($bench['agency_name'])) . '</option>';
             }
         }
+
         echo $dropDownOptions;
     }
+
 
     public function getAddressByPincode()
     {
@@ -91,7 +89,8 @@ class Ajaxcalls extends BaseController
         foreach ($districts as $district) {
             $dropDownOptions .= '<option value="' . sanitize(trim($district['id_no'])) . '">' . sanitize(strtoupper(trim($district['name']))) . '</option>';
         }
-        echo $dropDownOptions;exit();
+        echo $dropDownOptions;
+        exit();
     }
 
     public function getSelectedDistricts()
@@ -358,8 +357,9 @@ class Ajaxcalls extends BaseController
 
         echo $dropDownOptions;
     }
-   public function get_casetype()
-    {   $ddl_court=$_REQUEST['ddl_court'];
+    public function get_casetype()
+    {
+        $ddl_court = $_REQUEST['ddl_court'];
         $dropDownOptions = '<option value="">SELECT</option>';
         $data_list = $this->DropdownListModel->get_case_type_caveat($ddl_court);
         foreach ($data_list as $row) {
@@ -371,12 +371,16 @@ class Ajaxcalls extends BaseController
     {
         $high_court_id = (sanitize($_REQUEST['high_court_id']));
         $court_type = $_REQUEST['court_type'];
-        if (!isset($_REQUEST['bench_id'])){$_REQUEST['bench_id']='';}else{ $_REQUEST['bench_id']; }
-        $bench_id=$_REQUEST['bench_id'];
+        if (!isset($_REQUEST['bench_id'])) {
+            $_REQUEST['bench_id'] = '';
+        } else {
+            $_REQUEST['bench_id'];
+        }
+        $bench_id = $_REQUEST['bench_id'];
         $params = array();
         $params['court_type'] = $court_type;
-        $params['cmis_state_id'] =$high_court_id;
-        $params['bench_id'] =$bench_id;
+        $params['cmis_state_id'] = $high_court_id;
+        $params['bench_id'] = $bench_id;
         $selected_bench = "";
         $dropDownOptions = '<option value="">Select High Court Bench</option>';
         if (!empty($high_court_id) && !empty($court_type)) {
@@ -394,7 +398,6 @@ class Ajaxcalls extends BaseController
         }
         echo $dropDownOptions;
         exit();
-
     }
 
     function get_hc_bench_list_all_case_type_all_judges()
@@ -461,45 +464,43 @@ class Ajaxcalls extends BaseController
         }
 
 
-        echo $dropDownOptions.'@@@'.$dropDownOptions1.'@@@'.$dropDownOptions2;
-
+        echo $dropDownOptions . '@@@' . $dropDownOptions1 . '@@@' . $dropDownOptions2;
     }
     public function get_lc_hc_casetype()
     {
 
-        $ddl_court=$_REQUEST['ddl_court'];
-        $ddl_st_agncy=$_REQUEST['ddl_st_agncy'];
+        $ddl_court = $_REQUEST['ddl_court'];
+        $ddl_st_agncy = $_REQUEST['ddl_st_agncy'];
         $dropDownOptions = '<option value="">SELECT</option>';
-        $data_list = $this->DropdownListModel->get_lc_hc_casetype($ddl_st_agncy,$ddl_court,null,'Y');
+        $data_list = $this->DropdownListModel->get_lc_hc_casetype($ddl_st_agncy, $ddl_court, null, 'Y');
         foreach ($data_list as $row) {
             $dropDownOptions .= '<option value="' . $row['lccasecode'] . '" title="' . $row['lccasename'] . '">' . $row['type_sname'] . '</option>';
         }
-echo $dropDownOptions;
-}
+        echo $dropDownOptions;
+    }
 
 
-    public function get_da_name(){
+    public function get_da_name()
+    {
         $q = strtolower($_GET["term"]);
         $ucode = $_SESSION['login']['usercode'];
 
-        if($ucode==638){
-            $condition1="section=32";
-        }else{
+        if ($ucode == 638) {
+            $condition1 = "section=32";
+        } else {
             $condition1 = "section=(select section from master.users where usercode in ($ucode))";
-        }    
-        $sql_section="select section from master.users where usercode in ($ucode)";
-        $sql1 = "select  usercode,name,empid,section_name,id from master.users a left join master.usersection b ON section=b.id   where usertype in (17,50,51) AND (name ILIKE '%$q%' OR empid::TEXT ilike '%$q%' ) and ".$condition1." order by section_name";
+        }
+        $sql_section = "select section from master.users where usercode in ($ucode)";
+        $sql1 = "select  usercode,name,empid,section_name,id from master.users a left join master.usersection b ON section=b.id   where usertype in (17,50,51) AND (name ILIKE '%$q%' OR empid::TEXT ilike '%$q%' ) and " . $condition1 . " order by section_name";
         $rs1 = $this->db->query($sql1);
         $result = $rs1->getResultArray();
-        $json=array();
-        if(!empty($result)){
+        $json = array();
+        if (!empty($result)) {
             foreach ($result as $row) {
-                $json[]=array('value'=>$row['usercode'],'label'=>$row['name'].' - ['.$row['empid'].']'.' - ['.$row['section_name'].']');
+                $json[] = array('value' => $row['usercode'], 'label' => $row['name'] . ' - [' . $row['empid'] . ']' . ' - [' . $row['section_name'] . ']');
             }
         }
 
         echo json_encode($json);
-
     }
-    
 }

@@ -6,16 +6,16 @@ use App\Libraries\webservices\Efiling_webservices;
 use App\Libraries\webservices\Highcourt_webservices;
 use App\Models\Common\DropdownListModel;
 use App\Models\Entities\Model_lc_hc_casetype;
-use App\Models\Entities\Model_main_a;
-use App\Models\Entities\Model_usersection;
-use App\Models\Filing\Model_caveat;
-use App\Models\Filing\Model_party;
-use App\Models\Filing\Model_renewed_caveat;
-use App\Models\Filing\Model_special_category_filing;
+use App\Models\Entities\MainA;
+use App\Models\Entities\Usersection;
+use App\Models\Filing\ModelCaveat;
+use App\Models\Filing\ModelParty;
+use App\Models\Filing\ModelRenewedCaveat;
+use App\Models\Filing\ModelSpecialCategoryFiling;
 use App\Models\Master\ModelCasetype;
 use App\Models\Master\ModelCntDiaryNo;
-use App\Models\Model_main;
-use App\Models\Filing\Model_diary;
+use App\Models\ModelMain;
+use App\Models\Filing\ModelDiary;
 
 class Diary extends BaseController
 {
@@ -39,17 +39,17 @@ class Diary extends BaseController
         $this->efiling_webservices= new Efiling_webservices();
         $this->highcourt_webservices= new Highcourt_webservices();
         $this->DropdownListModel= new DropdownListModel();
-        $this->Model_main= new Model_main();
-        $this->Model_main_a= new Model_main_a();
-        $this->Model_diary= new Model_diary();
+        $this->Model_main= new ModelMain();
+        $this->Model_main_a= new MainA();
+        $this->Model_diary= new ModelDiary();
         $this->ModelCntDiaryNo= new ModelCntDiaryNo();
         $this->ModelCasetype= new ModelCasetype();
-        $this->Model_special_category_filing= new Model_special_category_filing();
-        $this->Model_party= new Model_party();
-        $this->Model_renewed_caveat= new Model_renewed_caveat();
-        $this->Model_caveat= new Model_caveat();
+        $this->Model_special_category_filing= new ModelSpecialCategoryFiling();
+        $this->Model_party= new ModelParty();
+        $this->Model_renewed_caveat= new ModelRenewedCaveat();
+        $this->Model_caveat= new ModelCaveat();
         $this->Model_lc_hc_casetype= new Model_lc_hc_casetype();
-        $this->Model_usersection= new Model_usersection();
+        $this->Model_usersection= new Usersection();
 
     }
 
@@ -63,7 +63,6 @@ class Diary extends BaseController
         }else{
             $redirect_url_to = $_SESSION['redirect_url_to'];
             if($redirect_url_to == 'Filing/Diary/search'){
-
                 $current_page_url = base_url('Filing/DiaryModify');
             }else{
 
