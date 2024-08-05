@@ -243,7 +243,7 @@ class DropdownListModel extends Model
 
     public function get_usersection($id = null)
     {
-        $table_name = 'master.usersection';
+        $table_name = 'usersection';
         $file = env('Json_master_table') . $table_name . '.json';
         if (file_exists($file)) {
             $json = file_get_contents($file);
@@ -295,19 +295,33 @@ class DropdownListModel extends Model
 
     public function getPincodeDetails($pincode)
     {
-        $this->db->select('*');
-        $this->db->from('master.pincode_district_mapping');
-        $this->db->where('pincode', $pincode);
-        $this->db->order_by('taluk_name', 'ASC');
-        $this->db->limit(1);
+        
+        $builder = $this->db->table("master.pincode_district_mapping");
+        $builder->select("*");
+        $builder->where('pincode', $pincode);
+        $builder->order_by('taluk_name', 'ASC');
+        $builder->limit(1);
+        $query = $builder->get(1);
 
-        $query = $this->db->get();
-
-        if ($query->num_rows() >= 1) {
-            return $query->result_array();
+        if ($query->getNumRows() >= 1) {
+            return $query->getRowArray();
         } else {
             return false;
         }
+
+        // $this->db->select('*');
+        // $this->db->from('master.pincode_district_mapping');
+        // $this->db->where('pincode', $pincode);
+        // $this->db->order_by('taluk_name', 'ASC');
+        // $this->db->limit(1);
+
+        // $query = $this->db->get();
+
+        // if ($query->num_rows() >= 1) {
+        //     return $query->result_array();
+        // } else {
+        //     return false;
+        // }
     }
 
     public function getCountryList()
